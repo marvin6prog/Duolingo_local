@@ -1,0 +1,1316 @@
+[
+  {
+    "id": "gre-01",
+    "subject": "salutation",
+    "fr": "Bonjour",
+    "en": "Good morning",
+    "ba": "Mbõlõ",
+    "phonetic": "Mbo-lo",
+    "part-of-speech": "Expression"
+  },
+  {
+    "id": "gre-02",
+    "subject": "salutation",
+    "fr": "Bonjour (à toi)",
+    "en": "Hello (to you)",
+    "ba": "O zi à",
+    "phonetic": "O-zi-a",
+    "part-of-speech": "Expression"
+  },
+  {
+    "id": "gre-03",
+    "subject": "salutation",
+    "fr": "Bonjour (à vous)",
+    "en": "Hello (to you all)",
+    "ba": "Bîn zi à",
+    "phonetic": "Bin-zi-a",
+    "part-of-speech": "Expression"
+  },
+  {
+    "id": "gre-04",
+    "subject": "salutation",
+    "fr": "Bon après-midi",
+    "en": "Good afternoon",
+    "ba": "O mwà à",
+    "phonetic": "O-mwa-a",
+    "part-of-speech": "Expression"
+  },
+  {
+    "id": "gre-05",
+    "subject": "salutation",
+    "fr": "Bonsoir",
+    "en": "Good evening",
+    "ba": "O njɔ̀ à",
+    "phonetic": "O-njo-a",
+    "part-of-speech": "Expression"
+  },
+  {
+    "id": "gre-06",
+    "subject": "salutation",
+    "fr": "Bonne nuit",
+    "en": "Good night",
+    "ba": "Mẹ zi sîn",
+    "phonetic": "Me-zi-sin",
+    "part-of-speech": "Expression"
+  },
+  {
+    "id": "gre-07",
+    "subject": "salutation",
+    "fr": "Comment ça va ?",
+    "en": "How are you?",
+    "ba": "Mẹ zi sî ?",
+    "phonetic": "Me-zi-si",
+    "part-of-speech": "Expression"
+  },
+  {
+    "id": "gre-08",
+    "subject": "salutation",
+    "fr": "Bienvenue",
+    "en": "Welcome",
+    "ba": "Mẹ zi fân",
+    "phonetic": "Me-zi-fan",
+    "part-of-speech": "Expression"
+  },
+  {
+    "id": "gre-09",
+    "subject": "salutation",
+    "fr": "Merci",
+    "en": "Thank you",
+    "ba": "Mẹ zi kɔ̀",
+    "phonetic": "Me-zi-ko",
+    "part-of-speech": "Expression"
+  },
+  {
+    "id": "gre-10",
+    "subject": "salutation",
+    "fr": "De rien",
+    "en": "You're welcome",
+    "ba": "Nzù mèbwo",
+    "phonetic": "Nzu-me-bwo",
+    "part-of-speech": "Expression"
+  },
+  {
+    "id": "gre-11",
+    "subject": "salutation",
+    "fr": "Pardon",
+    "en": "Excuse me",
+    "ba": "Mẹ tɔ̀",
+    "phonetic": "Me-to",
+    "part-of-speech": "Expression"
+  },
+  {
+    "id": "gre-12",
+    "subject": "salutation",
+    "fr": "Oui, Monsieur",
+    "en": "Yes, Sir",
+    "ba": "Ń mẹ tả",
+    "phonetic": "N-me-ta",
+    "part-of-speech": "Expression"
+  },
+  {
+    "id": "gre-13",
+    "subject": "salutation",
+    "fr": "Oui, Madame",
+    "en": "Yes, Ma'am",
+    "ba": "Ń mẹ mã",
+    "phonetic": "N-me-ma",
+    "part-of-speech": "Expression"
+  },
+  {
+    "id": "gre-14",
+    "subject": "salutation",
+    "fr": "Bonne journée",
+    "en": "Have a good day",
+    "ba": "Mẹ zi tânjɔ̀",
+    "phonetic": "Me-zi-tanjo",
+    "part-of-speech": "Expression"
+  },
+  {
+    "id": "gre-15",
+    "subject": "salutation",
+    "fr": "Au revoir",
+    "en": "Goodbye",
+    "ba": "Mẹ kàm",
+    "phonetic": "Me-kam",
+    "part-of-speech": "Expression"
+  },
+  {
+    "id": "foo-01",
+    "subject": "nourriture",
+    "fr": "Manger",
+    "en": "To eat",
+    "ba": "Tôn",
+    "phonetic": "Ton",
+    "part-of-speech": "Verbe"
+  },
+  {
+    "id": "foo-02",
+    "subject": "nourriture",
+    "fr": "Boire",
+    "en": "To drink",
+    "ba": "Nù",
+    "phonetic": "Nu",
+    "part-of-speech": "Verbe"
+  },
+  {
+    "id": "foo-03",
+    "subject": "nourriture",
+    "fr": "Eau",
+    "en": "Water",
+    "ba": "Ndàp",
+    "phonetic": "N-dap",
+    "part-of-speech": "Nom"
+  },
+  {
+    "id": "foo-04",
+    "subject": "nourriture",
+    "fr": "Nourriture / Repas",
+    "en": "Food / Meal",
+    "ba": "Kùì",
+    "phonetic": "Ku-i",
+    "part-of-speech": "Nom"
+  },
+  {
+    "id": "foo-05",
+    "subject": "nourriture",
+    "fr": "Viande",
+    "en": "Meat",
+    "ba": "Nyàm",
+    "phonetic": "Nyam",
+    "part-of-speech": "Nom"
+  },
+  {
+    "id": "foo-06",
+    "subject": "nourriture",
+    "fr": "Poisson",
+    "en": "Fish",
+    "ba": "Ngwès",
+    "phonetic": "N-gwes",
+    "part-of-speech": "Nom"
+  },
+  {
+    "id": "foo-07",
+    "subject": "nourriture",
+    "fr": "Légume",
+    "en": "Vegetable",
+    "ba": "Ndòl",
+    "phonetic": "N-dol",
+    "part-of-speech": "Nom"
+  },
+  {
+    "id": "foo-08",
+    "subject": "nourriture",
+    "fr": "Maïs",
+    "en": "Corn",
+    "ba": "Mbùrù",
+    "phonetic": "Mbu-ru",
+    "part-of-speech": "Nom"
+  },
+  {
+    "id": "foo-09",
+    "subject": "nourriture",
+    "fr": "Haricots",
+    "en": "Beans",
+    "ba": "Njàmbè",
+    "phonetic": "N-jam-be",
+    "part-of-speech": "Nom"
+  },
+  {
+    "id": "foo-10",
+    "subject": "nourriture",
+    "fr": "Plantain",
+    "en": "Plantain",
+    "ba": "Mbòdò",
+    "phonetic": "Mbo-do",
+    "part-of-speech": "Nom"
+  },
+  {
+    "id": "foo-11",
+    "subject": "nourriture",
+    "fr": "Huile de palme",
+    "en": "Palm oil",
+    "ba": "Mànjì",
+    "phonetic": "Man-ji",
+    "part-of-speech": "Nom"
+  },
+  {
+    "id": "foo-12",
+    "subject": "nourriture",
+    "fr": "Sel",
+    "en": "Salt",
+    "ba": "Mbwèm",
+    "phonetic": "Mbwem",
+    "part-of-speech": "Nom"
+  },
+  {
+    "id": "foo-13",
+    "subject": "nourriture",
+    "fr": "Feu / Cuisine",
+    "en": "Fire / Cooking",
+    "ba": "Mwì",
+    "phonetic": "Mwi",
+    "part-of-speech": "Nom"
+  },
+  {
+    "id": "foo-14",
+    "subject": "nourriture",
+    "fr": "Lait",
+    "en": "Milk",
+    "ba": "Sùm",
+    "phonetic": "Sum",
+    "part-of-speech": "Nom"
+  },
+  {
+    "id": "foo-15",
+    "subject": "nourriture",
+    "fr": "Fruit",
+    "en": "Fruit",
+    "ba": "Mbìà",
+    "phonetic": "Mbi-a",
+    "part-of-speech": "Nom"
+  },
+  {
+    "id": "fam-01",
+    "subject": "famille",
+    "fr": "Père",
+    "en": "Father",
+    "ba": "Tà",
+    "phonetic": "Ta",
+    "part-of-speech": "Nom"
+  },
+  {
+    "id": "fam-02",
+    "subject": "famille",
+    "fr": "Mère",
+    "en": "Mother",
+    "ba": "Mà",
+    "phonetic": "Ma",
+    "part-of-speech": "Nom"
+  },
+  {
+    "id": "fam-03",
+    "subject": "famille",
+    "fr": "Fils / Enfant",
+    "en": "Son / Child",
+    "ba": "Mwàn",
+    "phonetic": "Mwan",
+    "part-of-speech": "Nom"
+  },
+  {
+    "id": "fam-04",
+    "subject": "famille",
+    "fr": "Fille",
+    "en": "Daughter",
+    "ba": "Mwàn mã",
+    "phonetic": "Mwan-ma",
+    "part-of-speech": "Nom"
+  },
+  {
+    "id": "fam-05",
+    "subject": "famille",
+    "fr": "Frère",
+    "en": "Brother",
+    "ba": "Mfẹl",
+    "phonetic": "Mfel",
+    "part-of-speech": "Nom"
+  },
+  {
+    "id": "fam-06",
+    "subject": "famille",
+    "fr": "Sœur",
+    "en": "Sister",
+    "ba": "Mfẹl mã",
+    "phonetic": "Mfel-ma",
+    "part-of-speech": "Nom"
+  },
+  {
+    "id": "fam-07",
+    "subject": "famille",
+    "fr": "Grand-père",
+    "en": "Grandfather",
+    "ba": "Tà nkù",
+    "phonetic": "Ta-nku",
+    "part-of-speech": "Nom"
+  },
+  {
+    "id": "fam-08",
+    "subject": "famille",
+    "fr": "Grand-mère",
+    "en": "Grandmother",
+    "ba": "Mà nkù",
+    "phonetic": "Ma-nku",
+    "part-of-speech": "Nom"
+  },
+  {
+    "id": "fam-09",
+    "subject": "famille",
+    "fr": "Oncle",
+    "en": "Uncle",
+    "ba": "Tà àm",
+    "phonetic": "Ta-am",
+    "part-of-speech": "Nom"
+  },
+  {
+    "id": "fam-10",
+    "subject": "famille",
+    "fr": "Tante",
+    "en": "Aunt",
+    "ba": "Mà àm",
+    "phonetic": "Ma-am",
+    "part-of-speech": "Nom"
+  },
+  {
+    "id": "fam-11",
+    "subject": "famille",
+    "fr": "Mari",
+    "en": "Husband",
+    "ba": "Kùm",
+    "phonetic": "Kum",
+    "part-of-speech": "Nom"
+  },
+  {
+    "id": "fam-12",
+    "subject": "famille",
+    "fr": "Femme / Épouse",
+    "en": "Wife",
+    "ba": "Làm",
+    "phonetic": "Lam",
+    "part-of-speech": "Nom"
+  },
+  {
+    "id": "fam-13",
+    "subject": "famille",
+    "fr": "Ami / Amie",
+    "en": "Friend",
+    "ba": "Tànjòn",
+    "phonetic": "Tan-jon",
+    "part-of-speech": "Nom"
+  },
+  {
+    "id": "fam-14",
+    "subject": "famille",
+    "fr": "Famille",
+    "en": "Family",
+    "ba": "Fô",
+    "phonetic": "Fo",
+    "part-of-speech": "Nom"
+  },
+  {
+    "id": "fam-15",
+    "subject": "famille",
+    "fr": "Bébé / Nourrisson",
+    "en": "Baby",
+    "ba": "Mwàn pùpù",
+    "phonetic": "Mwan-pu-pu",
+    "part-of-speech": "Nom"
+  },
+  {
+    "id": "act-01",
+    "subject": "actions",
+    "fr": "Venir",
+    "en": "To come",
+    "ba": "Wà",
+    "phonetic": "Wa",
+    "part-of-speech": "Verbe"
+  },
+  {
+    "id": "act-02",
+    "subject": "actions",
+    "fr": "Aller / Partir",
+    "en": "To go",
+    "ba": "Kàm",
+    "phonetic": "Kam",
+    "part-of-speech": "Verbe"
+  },
+  {
+    "id": "act-03",
+    "subject": "actions",
+    "fr": "Voir",
+    "en": "To see",
+    "ba": "Yî",
+    "phonetic": "Yi",
+    "part-of-speech": "Verbe"
+  },
+  {
+    "id": "act-04",
+    "subject": "actions",
+    "fr": "Entendre / Écouter",
+    "en": "To hear / To listen",
+    "ba": "Wù",
+    "phonetic": "Wu",
+    "part-of-speech": "Verbe"
+  },
+  {
+    "id": "act-05",
+    "subject": "actions",
+    "fr": "Parler / Dire",
+    "en": "To speak / To say",
+    "ba": "Kùì",
+    "phonetic": "Kui",
+    "part-of-speech": "Verbe"
+  },
+  {
+    "id": "act-06",
+    "subject": "actions",
+    "fr": "Dormir",
+    "en": "To sleep",
+    "ba": "Mèbwo",
+    "phonetic": "Me-bwo",
+    "part-of-speech": "Verbe"
+  },
+  {
+    "id": "act-07",
+    "subject": "actions",
+    "fr": "Se lever",
+    "en": "To get up",
+    "ba": "Sẹnni",
+    "phonetic": "Sen-ni",
+    "part-of-speech": "Verbe"
+  },
+  {
+    "id": "act-08",
+    "subject": "actions",
+    "fr": "Travailler",
+    "en": "To work",
+    "ba": "Shî",
+    "phonetic": "Shi",
+    "part-of-speech": "Verbe"
+  },
+  {
+    "id": "act-09",
+    "subject": "actions",
+    "fr": "Donner",
+    "en": "To give",
+    "ba": "Pà",
+    "phonetic": "Pa",
+    "part-of-speech": "Verbe"
+  },
+  {
+    "id": "act-10",
+    "subject": "actions",
+    "fr": "Prendre",
+    "en": "To take",
+    "ba": "Kwà",
+    "phonetic": "Kwa",
+    "part-of-speech": "Verbe"
+  },
+  {
+    "id": "act-11",
+    "subject": "actions",
+    "fr": "S'asseoir",
+    "en": "To sit",
+    "ba": "Dù",
+    "phonetic": "Du",
+    "part-of-speech": "Verbe"
+  },
+  {
+    "id": "act-12",
+    "subject": "actions",
+    "fr": "Marcher",
+    "en": "To walk",
+    "ba": "Tɛ̀n",
+    "phonetic": "Ten",
+    "part-of-speech": "Verbe"
+  },
+  {
+    "id": "act-13",
+    "subject": "actions",
+    "fr": "Chercher",
+    "en": "To look for",
+    "ba": "Zù",
+    "phonetic": "Zu",
+    "part-of-speech": "Verbe"
+  },
+  {
+    "id": "act-14",
+    "subject": "actions",
+    "fr": "Appeler",
+    "en": "To call",
+    "ba": "Bɛ̀",
+    "phonetic": "Be",
+    "part-of-speech": "Verbe"
+  },
+  {
+    "id": "act-15",
+    "subject": "actions",
+    "fr": "Aider",
+    "en": "To help",
+    "ba": "Zî",
+    "phonetic": "Zi",
+    "part-of-speech": "Verbe"
+  },
+  {
+    "id": "num-01",
+    "subject": "nombres",
+    "fr": "Un",
+    "en": "One",
+    "ba": "Tɛ̂'",
+    "phonetic": "Teh",
+    "part-of-speech": "Nombre"
+  },
+  {
+    "id": "num-02",
+    "subject": "nombres",
+    "fr": "Deux",
+    "en": "Two",
+    "ba": "Pɛ́'",
+    "phonetic": "Peh",
+    "part-of-speech": "Nombre"
+  },
+  {
+    "id": "num-03",
+    "subject": "nombres",
+    "fr": "Trois",
+    "en": "Three",
+    "ba": "Tà'",
+    "phonetic": "Tah",
+    "part-of-speech": "Nombre"
+  },
+  {
+    "id": "num-04",
+    "subject": "nombres",
+    "fr": "Quatre",
+    "en": "Four",
+    "ba": "Nì'",
+    "phonetic": "Nih",
+    "part-of-speech": "Nombre"
+  },
+  {
+    "id": "num-05",
+    "subject": "nombres",
+    "fr": "Cinq",
+    "en": "Five",
+    "ba": "Tàn",
+    "phonetic": "Tan",
+    "part-of-speech": "Nombre"
+  },
+  {
+    "id": "num-06",
+    "subject": "nombres",
+    "fr": "Six",
+    "en": "Six",
+    "ba": "Ntùgù",
+    "phonetic": "N-tu-gu",
+    "part-of-speech": "Nombre"
+  },
+  {
+    "id": "num-07",
+    "subject": "nombres",
+    "fr": "Sept",
+    "en": "Seven",
+    "ba": "Sàmbà",
+    "phonetic": "Sam-ba",
+    "part-of-speech": "Nombre"
+  },
+  {
+    "id": "num-08",
+    "subject": "nombres",
+    "fr": "Huit",
+    "en": "Eight",
+    "ba": "Nyàl",
+    "phonetic": "Nyal",
+    "part-of-speech": "Nombre"
+  },
+  {
+    "id": "num-09",
+    "subject": "nombres",
+    "fr": "Neuf",
+    "en": "Nine",
+    "ba": "Fɛ̀'",
+    "phonetic": "Feh",
+    "part-of-speech": "Nombre"
+  },
+  {
+    "id": "num-10",
+    "subject": "nombres",
+    "fr": "Dix",
+    "en": "Ten",
+    "ba": "Gùm",
+    "phonetic": "Gum",
+    "part-of-speech": "Nombre"
+  },
+  {
+    "id": "num-11",
+    "subject": "nombres",
+    "fr": "Vingt",
+    "en": "Twenty",
+    "ba": "Pɛ́' gùm",
+    "phonetic": "Peh-gum",
+    "part-of-speech": "Nombre"
+  },
+  {
+    "id": "num-12",
+    "subject": "nombres",
+    "fr": "Trente",
+    "en": "Thirty",
+    "ba": "Tà' gùm",
+    "phonetic": "Tah-gum",
+    "part-of-speech": "Nombre"
+  },
+  {
+    "id": "num-13",
+    "subject": "nombres",
+    "fr": "Cent",
+    "en": "One hundred",
+    "ba": "Kàm",
+    "phonetic": "Kam",
+    "part-of-speech": "Nombre"
+  },
+  {
+    "id": "num-14",
+    "subject": "nombres",
+    "fr": "Beaucoup",
+    "en": "Many / A lot",
+    "ba": "Lè'",
+    "phonetic": "Leh",
+    "part-of-speech": "Adjectif"
+  },
+  {
+    "id": "num-15",
+    "subject": "nombres",
+    "fr": "Peu / Petit peu",
+    "en": "Few / A little",
+    "ba": "Fùì",
+    "phonetic": "Fu-i",
+    "part-of-speech": "Adjectif"
+  },
+  {
+    "id": "alp-01",
+    "subject": "alphabet",
+    "fr": "A",
+    "en": "A",
+    "ba": "A / à / â",
+    "phonetic": "a",
+    "part-of-speech": "Lettre"
+  },
+  {
+    "id": "alp-02",
+    "subject": "alphabet",
+    "fr": "B",
+    "en": "B",
+    "ba": "B / b",
+    "phonetic": "b",
+    "part-of-speech": "Lettre"
+  },
+  {
+    "id": "alp-03",
+    "subject": "alphabet",
+    "fr": "D",
+    "en": "D",
+    "ba": "D / d",
+    "phonetic": "d",
+    "part-of-speech": "Lettre"
+  },
+  {
+    "id": "alp-04",
+    "subject": "alphabet",
+    "fr": "E",
+    "en": "E",
+    "ba": "E / è / ê",
+    "phonetic": "e",
+    "part-of-speech": "Lettre"
+  },
+  {
+    "id": "alp-05",
+    "subject": "alphabet",
+    "fr": "Ɛ (E ouvert)",
+    "en": "Ɛ (open E)",
+    "ba": "Ɛ / ɛ̀ / ɛ̂",
+    "phonetic": "ɛ",
+    "part-of-speech": "Lettre spéciale"
+  },
+  {
+    "id": "alp-06",
+    "subject": "alphabet",
+    "fr": "F",
+    "en": "F",
+    "ba": "F / f",
+    "phonetic": "f",
+    "part-of-speech": "Lettre"
+  },
+  {
+    "id": "alp-07",
+    "subject": "alphabet",
+    "fr": "G",
+    "en": "G",
+    "ba": "G / g",
+    "phonetic": "g",
+    "part-of-speech": "Lettre"
+  },
+  {
+    "id": "alp-08",
+    "subject": "alphabet",
+    "fr": "I",
+    "en": "I",
+    "ba": "I / ì / î",
+    "phonetic": "i",
+    "part-of-speech": "Lettre"
+  },
+  {
+    "id": "alp-09",
+    "subject": "alphabet",
+    "fr": "K",
+    "en": "K",
+    "ba": "K / k",
+    "phonetic": "k",
+    "part-of-speech": "Lettre"
+  },
+  {
+    "id": "alp-10",
+    "subject": "alphabet",
+    "fr": "M",
+    "en": "M",
+    "ba": "M / m",
+    "phonetic": "m",
+    "part-of-speech": "Lettre"
+  },
+  {
+    "id": "alp-11",
+    "subject": "alphabet",
+    "fr": "N",
+    "en": "N",
+    "ba": "N / n",
+    "phonetic": "n",
+    "part-of-speech": "Lettre"
+  },
+  {
+    "id": "alp-12",
+    "subject": "alphabet",
+    "fr": "Ŋ (N vélaire)",
+    "en": "Ŋ (velar N)",
+    "ba": "Ŋ / ŋ",
+    "phonetic": "ŋ",
+    "part-of-speech": "Lettre spéciale"
+  },
+  {
+    "id": "alp-13",
+    "subject": "alphabet",
+    "fr": "O",
+    "en": "O",
+    "ba": "O / ò / ô",
+    "phonetic": "o",
+    "part-of-speech": "Lettre"
+  },
+  {
+    "id": "alp-14",
+    "subject": "alphabet",
+    "fr": "Ɔ (O ouvert)",
+    "en": "Ɔ (open O)",
+    "ba": "Ɔ / ɔ̀ / ɔ̂",
+    "phonetic": "ɔ",
+    "part-of-speech": "Lettre spéciale"
+  },
+  {
+    "id": "alp-15",
+    "subject": "alphabet",
+    "fr": "S",
+    "en": "S",
+    "ba": "S / s",
+    "phonetic": "s",
+    "part-of-speech": "Lettre"
+  },
+  {
+    "id": "alp-16",
+    "subject": "alphabet",
+    "fr": "SH",
+    "en": "SH",
+    "ba": "Sh / sh",
+    "phonetic": "ʃ",
+    "part-of-speech": "Digramme"
+  },
+  {
+    "id": "alp-17",
+    "subject": "alphabet",
+    "fr": "T",
+    "en": "T",
+    "ba": "T / t",
+    "phonetic": "t",
+    "part-of-speech": "Lettre"
+  },
+  {
+    "id": "alp-18",
+    "subject": "alphabet",
+    "fr": "U",
+    "en": "U",
+    "ba": "U / ù / û",
+    "phonetic": "u",
+    "part-of-speech": "Lettre"
+  },
+  {
+    "id": "alp-19",
+    "subject": "alphabet",
+    "fr": "W",
+    "en": "W",
+    "ba": "W / w",
+    "phonetic": "w",
+    "part-of-speech": "Lettre"
+  },
+  {
+    "id": "alp-20",
+    "subject": "alphabet",
+    "fr": "Y",
+    "en": "Y",
+    "ba": "Y / y",
+    "phonetic": "j",
+    "part-of-speech": "Lettre"
+  },
+  {
+    "id": "alp-21",
+    "subject": "alphabet",
+    "fr": "Z",
+    "en": "Z",
+    "ba": "Z / z",
+    "phonetic": "z",
+    "part-of-speech": "Lettre"
+  },
+  {
+    "id": "alp-22",
+    "subject": "alphabet",
+    "fr": "Ton bas (grave)",
+    "en": "Low tone (grave)",
+    "ba": "à / è / ì / ò / ù",
+    "phonetic": "ton bas",
+    "part-of-speech": "Ton"
+  },
+  {
+    "id": "alp-23",
+    "subject": "alphabet",
+    "fr": "Ton haut (aigu)",
+    "en": "High tone (acute)",
+    "ba": "á / é / í / ó / ú",
+    "phonetic": "ton haut",
+    "part-of-speech": "Ton"
+  },
+  {
+    "id": "alp-24",
+    "subject": "alphabet",
+    "fr": "Ton descendant (circonflexe)",
+    "en": "Falling tone (circumflex)",
+    "ba": "â / ê / î / ô / û",
+    "phonetic": "ton descendant",
+    "part-of-speech": "Ton"
+  },
+  {
+    "id": "alp-25",
+    "subject": "alphabet",
+    "fr": "Occlusion glottale",
+    "en": "Glottal stop",
+    "ba": "'",
+    "phonetic": "ʔ",
+    "part-of-speech": "Signe spécial"
+  },
+  {
+    "id": "alp-26",
+    "subject": "alphabet",
+    "fr": "Ə (Schwa)",
+    "en": "Ə (Schwa)",
+    "ba": "Ə / ə",
+    "phonetic": "ə",
+    "part-of-speech": "Lettre spéciale"
+  },
+  {
+    "id": "art-01",
+    "subject": "articles",
+    "fr": "Ce / Ceci (démonstratif proche)",
+    "en": "This (near demonstrative)",
+    "ba": "Wɛ̀",
+    "phonetic": "We",
+    "part-of-speech": "Démonstratif"
+  },
+  {
+    "id": "art-02",
+    "subject": "articles",
+    "fr": "Ce / Cela (démonstratif éloigné)",
+    "en": "That (far demonstrative)",
+    "ba": "Nɛ̀",
+    "phonetic": "Ne",
+    "part-of-speech": "Démonstratif"
+  },
+  {
+    "id": "art-03",
+    "subject": "articles",
+    "fr": "Mon / Ma (possessif 1ère pers. sing.)",
+    "en": "My (1st person singular possessive)",
+    "ba": "Àm",
+    "phonetic": "Am",
+    "part-of-speech": "Possessif"
+  },
+  {
+    "id": "art-04",
+    "subject": "articles",
+    "fr": "Ton / Ta (possessif 2ème pers. sing.)",
+    "en": "Your (2nd person singular possessive)",
+    "ba": "Ô",
+    "phonetic": "O",
+    "part-of-speech": "Possessif"
+  },
+  {
+    "id": "art-05",
+    "subject": "articles",
+    "fr": "Son / Sa (possessif 3ème pers. sing.)",
+    "en": "His/Her (3rd person singular possessive)",
+    "ba": "À",
+    "phonetic": "A",
+    "part-of-speech": "Possessif"
+  },
+  {
+    "id": "art-06",
+    "subject": "articles",
+    "fr": "Notre (possessif 1ère pers. plur.)",
+    "en": "Our (1st person plural possessive)",
+    "ba": "Bîn",
+    "phonetic": "Bin",
+    "part-of-speech": "Possessif"
+  },
+  {
+    "id": "art-07",
+    "subject": "articles",
+    "fr": "Votre (possessif 2ème pers. plur.)",
+    "en": "Your (2nd person plural possessive)",
+    "ba": "Bò",
+    "phonetic": "Bo",
+    "part-of-speech": "Possessif"
+  },
+  {
+    "id": "art-08",
+    "subject": "articles",
+    "fr": "Leur (possessif 3ème pers. plur.)",
+    "en": "Their (3rd person plural possessive)",
+    "ba": "Wò",
+    "phonetic": "Wo",
+    "part-of-speech": "Possessif"
+  },
+  {
+    "id": "art-09",
+    "subject": "articles",
+    "fr": "Un / Une (indéfini)",
+    "en": "A / An (indefinite)",
+    "ba": "Tɛ̂'",
+    "phonetic": "Teh",
+    "part-of-speech": "Déterminant indéfini"
+  },
+  {
+    "id": "art-10",
+    "subject": "articles",
+    "fr": "Le / La / Les (défini)",
+    "en": "The (definite)",
+    "ba": "Ə̀",
+    "phonetic": "E",
+    "part-of-speech": "Déterminant défini"
+  },
+  {
+    "id": "art-11",
+    "subject": "articles",
+    "fr": "Tous / Toutes",
+    "en": "All / Every",
+    "ba": "Tɛ̀ntɛ̀n",
+    "phonetic": "Ten-ten",
+    "part-of-speech": "Déterminant quantitatif"
+  },
+  {
+    "id": "art-12",
+    "subject": "articles",
+    "fr": "Quelque / Certain",
+    "en": "Some / Certain",
+    "ba": "Mbî",
+    "phonetic": "Mbi",
+    "part-of-speech": "Déterminant indéfini"
+  },
+  {
+    "id": "art-13",
+    "subject": "articles",
+    "fr": "Aucun / Aucune",
+    "en": "No / None",
+    "ba": "Kà ... tɛ̂'",
+    "phonetic": "Ka...teh",
+    "part-of-speech": "Déterminant négatif"
+  },
+  {
+    "id": "art-14",
+    "subject": "articles",
+    "fr": "Autre",
+    "en": "Other / Another",
+    "ba": "Yìà",
+    "phonetic": "Yi-a",
+    "part-of-speech": "Déterminant"
+  },
+  {
+    "id": "art-15",
+    "subject": "articles",
+    "fr": "Même",
+    "en": "Same",
+    "ba": "Nkîn",
+    "phonetic": "N-kin",
+    "part-of-speech": "Déterminant"
+  },
+  {
+    "id": "phr-01",
+    "subject": "phrases",
+    "fr": "Je m'appelle…",
+    "en": "My name is…",
+    "ba": "Mẹ bɛ̀ mẹ…",
+    "phonetic": "Me-be-me…",
+    "part-of-speech": "Phrase"
+  },
+  {
+    "id": "phr-02",
+    "subject": "phrases",
+    "fr": "Comment tu t'appelles ?",
+    "en": "What is your name?",
+    "ba": "Ò bɛ̀ ò ndé ?",
+    "phonetic": "O-be-o-nde",
+    "part-of-speech": "Phrase"
+  },
+  {
+    "id": "phr-03",
+    "subject": "phrases",
+    "fr": "Je ne comprends pas.",
+    "en": "I don't understand.",
+    "ba": "Mẹ kàm wù kè.",
+    "phonetic": "Me-kam-wu-ke",
+    "part-of-speech": "Phrase"
+  },
+  {
+    "id": "phr-04",
+    "subject": "phrases",
+    "fr": "Répète s'il te plaît.",
+    "en": "Please repeat.",
+    "ba": "Kùì à tɛ̀n.",
+    "phonetic": "Kui-a-ten",
+    "part-of-speech": "Phrase"
+  },
+  {
+    "id": "phr-05",
+    "subject": "phrases",
+    "fr": "Où es-tu ?",
+    "en": "Where are you?",
+    "ba": "Ò dù fô ?",
+    "phonetic": "O-du-fo",
+    "part-of-speech": "Phrase"
+  },
+  {
+    "id": "phr-06",
+    "subject": "phrases",
+    "fr": "Je suis ici.",
+    "en": "I am here.",
+    "ba": "Mẹ dù wùnì.",
+    "phonetic": "Me-du-wu-ni",
+    "part-of-speech": "Phrase"
+  },
+  {
+    "id": "phr-07",
+    "subject": "phrases",
+    "fr": "Je vais bien.",
+    "en": "I am fine.",
+    "ba": "Mẹ zi sî mbẹ.",
+    "phonetic": "Me-zi-si-mbe",
+    "part-of-speech": "Phrase"
+  },
+  {
+    "id": "phr-08",
+    "subject": "phrases",
+    "fr": "J'ai faim.",
+    "en": "I am hungry.",
+    "ba": "Mẹ tôn.",
+    "phonetic": "Me-ton",
+    "part-of-speech": "Phrase"
+  },
+  {
+    "id": "phr-09",
+    "subject": "phrases",
+    "fr": "J'ai soif.",
+    "en": "I am thirsty.",
+    "ba": "Mẹ nù ndàp.",
+    "phonetic": "Me-nu-ndap",
+    "part-of-speech": "Phrase"
+  },
+  {
+    "id": "phr-10",
+    "subject": "phrases",
+    "fr": "Viens ici !",
+    "en": "Come here!",
+    "ba": "Wà wùnì !",
+    "phonetic": "Wa-wu-ni",
+    "part-of-speech": "Phrase"
+  },
+  {
+    "id": "phr-11",
+    "subject": "phrases",
+    "fr": "Donne-moi de l'eau.",
+    "en": "Give me water.",
+    "ba": "Pà mẹ ndàp.",
+    "phonetic": "Pa-me-ndap",
+    "part-of-speech": "Phrase"
+  },
+  {
+    "id": "phr-12",
+    "subject": "phrases",
+    "fr": "Combien ça coûte ?",
+    "en": "How much is it?",
+    "ba": "À kùì gùm ndé ?",
+    "phonetic": "A-kui-gum-nde",
+    "part-of-speech": "Phrase"
+  },
+  {
+    "id": "phr-13",
+    "subject": "phrases",
+    "fr": "Je t'aime.",
+    "en": "I love you.",
+    "ba": "Mẹ yî wò.",
+    "phonetic": "Me-yi-wo",
+    "part-of-speech": "Phrase"
+  },
+  {
+    "id": "phr-14",
+    "subject": "phrases",
+    "fr": "Aide-moi s'il te plaît.",
+    "en": "Please help me.",
+    "ba": "Zî mẹ, mbẹ'bo.",
+    "phonetic": "Zi-me-mbe-bo",
+    "part-of-speech": "Phrase"
+  },
+  {
+    "id": "phr-15",
+    "subject": "phrases",
+    "fr": "À bientôt.",
+    "en": "See you soon.",
+    "ba": "Mẹ yî wò à tɛ̀n.",
+    "phonetic": "Me-yi-wo-a-ten",
+    "part-of-speech": "Phrase"
+  },
+  {
+    "id": "conj-01",
+    "subject": "conjugaisons",
+    "fr": "Je vais (présent — 1ère pers. sing.)",
+    "en": "I go",
+    "ba": "Mẹ kàm",
+    "phonetic": "Me-kam",
+    "part-of-speech": "Verbe conjugué"
+  },
+  {
+    "id": "conj-02",
+    "subject": "conjugaisons",
+    "fr": "Tu vas (présent — 2ème pers. sing.)",
+    "en": "You go",
+    "ba": "Ò kàm",
+    "phonetic": "O-kam",
+    "part-of-speech": "Verbe conjugué"
+  },
+  {
+    "id": "conj-03",
+    "subject": "conjugaisons",
+    "fr": "Il / Elle va (présent — 3ème pers. sing.)",
+    "en": "He / She goes",
+    "ba": "À kàm",
+    "phonetic": "A-kam",
+    "part-of-speech": "Verbe conjugué"
+  },
+  {
+    "id": "conj-04",
+    "subject": "conjugaisons",
+    "fr": "Nous allons (présent — 1ère pers. plur.)",
+    "en": "We go",
+    "ba": "Bìn kàm",
+    "phonetic": "Bin-kam",
+    "part-of-speech": "Verbe conjugué"
+  },
+  {
+    "id": "conj-05",
+    "subject": "conjugaisons",
+    "fr": "Vous allez (présent — 2ème pers. plur.)",
+    "en": "You all go",
+    "ba": "Bò kàm",
+    "phonetic": "Bo-kam",
+    "part-of-speech": "Verbe conjugué"
+  },
+  {
+    "id": "conj-06",
+    "subject": "conjugaisons",
+    "fr": "Ils / Elles vont (présent — 3ème pers. plur.)",
+    "en": "They go",
+    "ba": "Bà kàm",
+    "phonetic": "Ba-kam",
+    "part-of-speech": "Verbe conjugué"
+  },
+  {
+    "id": "conj-07",
+    "subject": "conjugaisons",
+    "fr": "Je suis allé (passé — 1ère pers. sing.)",
+    "en": "I went",
+    "ba": "Mẹ à kàm",
+    "phonetic": "Me-a-kam",
+    "part-of-speech": "Verbe conjugué"
+  },
+  {
+    "id": "conj-08",
+    "subject": "conjugaisons",
+    "fr": "Tu es allé (passé — 2ème pers. sing.)",
+    "en": "You went",
+    "ba": "Ò à kàm",
+    "phonetic": "O-a-kam",
+    "part-of-speech": "Verbe conjugué"
+  },
+  {
+    "id": "conj-09",
+    "subject": "conjugaisons",
+    "fr": "Il est allé (passé — 3ème pers. sing.)",
+    "en": "He went",
+    "ba": "À à kàm",
+    "phonetic": "A-a-kam",
+    "part-of-speech": "Verbe conjugué"
+  },
+  {
+    "id": "conj-10",
+    "subject": "conjugaisons",
+    "fr": "Je vais aller (futur — 1ère pers. sing.)",
+    "en": "I will go",
+    "ba": "Mẹ là kàm",
+    "phonetic": "Me-la-kam",
+    "part-of-speech": "Verbe conjugué"
+  },
+  {
+    "id": "conj-11",
+    "subject": "conjugaisons",
+    "fr": "Tu vas aller (futur — 2ème pers. sing.)",
+    "en": "You will go",
+    "ba": "Ò là kàm",
+    "phonetic": "O-la-kam",
+    "part-of-speech": "Verbe conjugué"
+  },
+  {
+    "id": "conj-12",
+    "subject": "conjugaisons",
+    "fr": "Nous allons aller (futur — 1ère pers. plur.)",
+    "en": "We will go",
+    "ba": "Bìn là kàm",
+    "phonetic": "Bin-la-kam",
+    "part-of-speech": "Verbe conjugué"
+  },
+  {
+    "id": "conj-13",
+    "subject": "conjugaisons",
+    "fr": "Je ne vais pas (négation — présent)",
+    "en": "I do not go",
+    "ba": "Mẹ kàm kè",
+    "phonetic": "Me-kam-ke",
+    "part-of-speech": "Verbe conjugué"
+  },
+  {
+    "id": "conj-14",
+    "subject": "conjugaisons",
+    "fr": "Je n'ai pas mangé (négation — passé)",
+    "en": "I did not eat",
+    "ba": "Mẹ à tôn kè",
+    "phonetic": "Me-a-ton-ke",
+    "part-of-speech": "Verbe conjugué"
+  },
+  {
+    "id": "conj-15",
+    "subject": "conjugaisons",
+    "fr": "Va ! (impératif)",
+    "en": "Go! (imperative)",
+    "ba": "Kàm !",
+    "phonetic": "Kam!",
+    "part-of-speech": "Verbe conjugué"
+  }
+]
