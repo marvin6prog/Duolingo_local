@@ -41,46 +41,47 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCVOBN7pzGdgeWP956dg908ZA-mLMTNETs',
-    appId: '1:433117123018:web:4202802398ae7b9bfa3f33',
-    messagingSenderId: '433117123018',
-    projectId: 'chat-965cd',
-    authDomain: 'chat-965cd.firebaseapp.com',
-    storageBucket: 'chat-965cd.firebasestorage.app',
+    apiKey: 'AIzaSyDo2fC88qI3Z9on8nitRiADb2vyA2WeLK8',
+    appId: '1:592550022084:web:795b143c782832604eb291',
+    messagingSenderId: '592550022084',
+    projectId: 'duolingo-1dfff',
+    authDomain: 'duolingo-1dfff.firebaseapp.com',
+    storageBucket: 'duolingo-1dfff.firebasestorage.app',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyB-qHHkneAIva7iJH97_xFrcqIIhmP00cE',
-    appId: '1:433117123018:android:597ec19dc336f575fa3f33',
-    messagingSenderId: '433117123018',
-    projectId: 'chat-965cd',
-    storageBucket: 'chat-965cd.firebasestorage.app',
+    apiKey: 'AIzaSyC9FlaWAtNXbconymPUy2dMaTgdkHH_P3M',
+    appId: '1:592550022084:android:e59ed337813462b74eb291',
+    messagingSenderId: '592550022084',
+    projectId: 'duolingo-1dfff',
+    storageBucket: 'duolingo-1dfff.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDxiXNQmn8swZBYMd99-uU3UZk1exn-9Bc',
-    appId: '1:433117123018:ios:8b1e2fb18a90071efa3f33',
-    messagingSenderId: '433117123018',
-    projectId: 'chat-965cd',
-    storageBucket: 'chat-965cd.firebasestorage.app',
+    apiKey: 'AIzaSyBGbEIh5ws9n8AjKP-xkiDY54RoQRoqlnc',
+    appId: '1:592550022084:ios:4fcf7f1611ab03064eb291',
+    messagingSenderId: '592550022084',
+    projectId: 'duolingo-1dfff',
+    storageBucket: 'duolingo-1dfff.firebasestorage.app',
     iosBundleId: 'com.example.duolingo',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDxiXNQmn8swZBYMd99-uU3UZk1exn-9Bc',
-    appId: '1:433117123018:ios:8b1e2fb18a90071efa3f33',
-    messagingSenderId: '433117123018',
-    projectId: 'chat-965cd',
-    storageBucket: 'chat-965cd.firebasestorage.app',
+    apiKey: 'AIzaSyBGbEIh5ws9n8AjKP-xkiDY54RoQRoqlnc',
+    appId: '1:592550022084:ios:4fcf7f1611ab03064eb291',
+    messagingSenderId: '592550022084',
+    projectId: 'duolingo-1dfff',
+    storageBucket: 'duolingo-1dfff.firebasestorage.app',
     iosBundleId: 'com.example.duolingo',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyCVOBN7pzGdgeWP956dg908ZA-mLMTNETs',
-    appId: '1:433117123018:web:04f2ce436422f0fdfa3f33',
-    messagingSenderId: '433117123018',
-    projectId: 'chat-965cd',
-    authDomain: 'chat-965cd.firebaseapp.com',
-    storageBucket: 'chat-965cd.firebasestorage.app',
+    apiKey: 'AIzaSyDo2fC88qI3Z9on8nitRiADb2vyA2WeLK8',
+    appId: '1:592550022084:web:37612be5cdeac1504eb291',
+    messagingSenderId: '592550022084',
+    projectId: 'duolingo-1dfff',
+    authDomain: 'duolingo-1dfff.firebaseapp.com',
+    storageBucket: 'duolingo-1dfff.firebasestorage.app',
   );
+
 }
