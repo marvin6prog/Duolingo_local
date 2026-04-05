@@ -1,0 +1,1262 @@
+[
+  {
+    "id": "alp-01",
+    "subject": "alphabet",
+    "fr": "Lettre A",
+    "en": "Letter A",
+    "bu": "A",
+    "phonetic": "a",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "alp-02",
+    "subject": "alphabet",
+    "fr": "Lettre B",
+    "en": "Letter B",
+    "bu": "B",
+    "phonetic": "bé",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "alp-03",
+    "subject": "alphabet",
+    "fr": "Lettre D",
+    "en": "Letter D",
+    "bu": "D",
+    "phonetic": "dé",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "alp-04",
+    "subject": "alphabet",
+    "fr": "Lettre E ",
+    "en": "Letter E",
+    "bu": "E",
+    "phonetic": "é ",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "alp-05",
+    "subject": "alphabet",
+    "fr": "Lettre É ",
+    "en": "Letter É",
+    "bu": "É",
+    "phonetic": "é",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "alp-06",
+    "subject": "alphabet",
+    "fr": "Lettre F",
+    "en": "Letter F",
+    "bu": "F",
+    "phonetic": "èf",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "alp-07",
+    "subject": "alphabet",
+    "fr": "Lettre G",
+    "en": "Letter G",
+    "bu": "G",
+    "phonetic": "gué",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "alp-08",
+    "subject": "alphabet",
+    "fr": "Lettre H",
+    "en": "Letter H",
+    "bu": "H",
+    "phonetic": "ash",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "alp-09",
+    "subject": "alphabet",
+    "fr": "Lettre I",
+    "en": "Letter I",
+    "bu": "I",
+    "phonetic": "i",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "alp-10",
+    "subject": "alphabet",
+    "fr": "Lettre J",
+    "en": "Letter J",
+    "bu": "J",
+    "phonetic": "dji",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "alp-11",
+    "subject": "alphabet",
+    "fr": "Lettre K",
+    "en": "Letter K",
+    "bu": "K",
+    "phonetic": "ka",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "alp-12",
+    "subject": "alphabet",
+    "fr": "Lettre L",
+    "en": "Letter L",
+    "bu": "L",
+    "phonetic": "èl",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "alp-13",
+    "subject": "alphabet",
+    "fr": "Lettre M",
+    "en": "Letter M",
+    "bu": "M",
+    "phonetic": "èm",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "alp-14",
+    "subject": "alphabet",
+    "fr": "Lettre N",
+    "en": "Letter N",
+    "bu": "N",
+    "phonetic": "èn",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "alp-15",
+    "subject": "alphabet",
+    "fr": "Lettre Ñ ",
+    "en": "Letter Ñ",
+    "bu": "Ñ",
+    "phonetic": "gni",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "alp-16",
+    "subject": "alphabet",
+    "fr": "Lettre Ŋ ",
+    "en": "Letter Ŋ",
+    "bu": "Ŋ",
+    "phonetic": "ng",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "alp-17",
+    "subject": "alphabet",
+    "fr": "Lettre O",
+    "en": "Letter O",
+    "bu": "O",
+    "phonetic": "o",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "alp-18",
+    "subject": "alphabet",
+    "fr": "Lettre Ó",
+    "en": "Letter Ó",
+    "bu": "Ó",
+    "phonetic": "o (long)",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "alp-19",
+    "subject": "alphabet",
+    "fr": "Lettre Ô ",
+    "en": "Letter Ô",
+    "bu": "Ô",
+    "phonetic": "o (ouvert)",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "alp-20",
+    "subject": "alphabet",
+    "fr": "Lettre P",
+    "en": "Letter P",
+    "bu": "P",
+    "phonetic": "pé",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "alp-21",
+    "subject": "alphabet",
+    "fr": "Lettre R",
+    "en": "Letter R",
+    "bu": "R",
+    "phonetic": "èr",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "alp-22",
+    "subject": "alphabet",
+    "fr": "Lettre S",
+    "en": "Letter S",
+    "bu": "S",
+    "phonetic": "ès",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "alp-23",
+    "subject": "alphabet",
+    "fr": "Lettre T",
+    "en": "Letter T",
+    "bu": "T",
+    "phonetic": "té",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "alp-24",
+    "subject": "alphabet",
+    "fr": "Lettre U",
+    "en": "Letter U",
+    "bu": "U",
+    "phonetic": "ou",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "alp-25",
+    "subject": "alphabet",
+    "fr": "Lettre V",
+    "en": "Letter V",
+    "bu": "V",
+    "phonetic": "vé",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "alp-26",
+    "subject": "alphabet",
+    "fr": "Lettre W",
+    "en": "Letter W",
+    "bu": "W",
+    "phonetic": "wa",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "alp-27",
+    "subject": "alphabet",
+    "fr": "Lettre Y",
+    "en": "Letter Y",
+    "bu": "Y",
+    "phonetic": "ya",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "alp-28",
+    "subject": "alphabet",
+    "fr": "Lettre Z",
+    "en": "Letter Z",
+    "bu": "Z",
+    "phonetic": "zed",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "exp-01",
+    "subject": "expression",
+    "fr": "Bonjour",
+    "en": "Hello",
+    "bu": "Mbôlô",
+    "phonetic": "mbo-lo",
+    "part_of_speech": "expression"
+  },
+  {
+    "id": "exp-02",
+    "subject": "expression",
+    "fr": "Bienvenue",
+    "en": "Welcome",
+    "bu": "Za'ane",
+    "phonetic": "za-a-né",
+    "part_of_speech": "expression"
+  },
+  {
+    "id": "exp-03",
+    "subject": "expression",
+    "fr": "Merci",
+    "en": "Thank you",
+    "bu": "Akiba",
+    "phonetic": "a-ki-ba",
+    "part_of_speech": "expression"
+  },
+  {
+    "id": "exp-04",
+    "subject": "expression",
+    "fr": "S'il vous plaît",
+    "en": "Please",
+    "bu": "Ma sili wo",
+    "phonetic": "ma si-li wo",
+    "part_of_speech": "expression"
+  },
+  {
+    "id": "exp-05",
+    "subject": "expression",
+    "fr": "Pardon / Excuse-moi",
+    "en": "Sorry",
+    "bu": "Jamé'é",
+    "phonetic": "dja-mé-é",
+    "part_of_speech": "expression"
+  },
+  {
+    "id": "exp-06",
+    "subject": "expression",
+    "fr": "Oui",
+    "en": "Yes",
+    "bu": "Ôwé",
+    "phonetic": "o-wé",
+    "part_of_speech": "expression"
+  },
+  {
+    "id": "exp-07",
+    "subject": "expression",
+    "fr": "Non",
+    "en": "No",
+    "bu": "Momo",
+    "phonetic": "mo-mo",
+    "part_of_speech": "expression"
+  },
+  {
+    "id": "exp-08",
+    "subject": "expression",
+    "fr": "Comment ça va ?",
+    "en": "How are you?",
+    "bu": "Wo ne mvo'e?",
+    "phonetic": "wo né mvo-é",
+    "part_of_speech": "expression"
+  },
+  {
+    "id": "exp-09",
+    "subject": "expression",
+    "fr": "Ça va bien",
+    "en": "I am fine",
+    "bu": "Mvo'e",
+    "phonetic": "mvo-é",
+    "part_of_speech": "expression"
+  },
+  {
+    "id": "exp-10",
+    "subject": "expression",
+    "fr": "Au revoir",
+    "en": "Goodbye",
+    "bu": "Me ke ya",
+    "phonetic": "mé ké ya",
+    "part_of_speech": "expression"
+  },
+  {
+    "id": "exp-11",
+    "subject": "expression",
+    "fr": "À demain",
+    "en": "See you tomorrow",
+    "bu": "Okiti",
+    "phonetic": "o-ki-ti",
+    "part_of_speech": "expression"
+  },
+  {
+    "id": "exp-12",
+    "subject": "expression",
+    "fr": "De rien",
+    "en": "You're welcome",
+    "bu": "Teke jam",
+    "phonetic": "té-ké djam",
+    "part_of_speech": "expression"
+  },
+  {
+    "id": "exp-13",
+    "subject": "expression",
+    "fr": "Je t'aime",
+    "en": "I love you",
+    "bu": "Ma ding wo",
+    "phonetic": "ma ding wo",
+    "part_of_speech": "expression"
+  },
+  {
+    "id": "exp-14",
+    "subject": "expression",
+    "fr": "Monsieur",
+    "en": "Sir",
+    "bu": "Jam",
+    "phonetic": "djam",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "exp-15",
+    "subject": "expression",
+    "fr": "Madame",
+    "en": "Madam",
+    "bu": "Minga",
+    "phonetic": "mi-nga",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "exp-16",
+    "subject": "expression",
+    "fr": "Félicitations",
+    "en": "Congratulations",
+    "bu": "Mevak",
+    "phonetic": "mé-vak",
+    "part_of_speech": "expression"
+  },
+  {
+    "id": "exp-17",
+    "subject": "expression",
+    "fr": "Je ne comprends pas",
+    "en": "I don't understand",
+    "bu": "Me nji wô'ô",
+    "phonetic": "mé ndji wo-o",
+    "part_of_speech": "expression"
+  },
+  {
+    "id": "exp-18",
+    "subject": "expression",
+    "fr": "Répète",
+    "en": "Repeat",
+    "bu": "Beta jô",
+    "phonetic": "bé-ta djo",
+    "part_of_speech": "expression"
+  },
+  {
+    "id": "exp-19",
+    "subject": "expression",
+    "fr": "Aujourd'hui",
+    "en": "Today",
+    "bu": "Den",
+    "phonetic": "den",
+    "part_of_speech": "adverb"
+  },
+  {
+    "id": "exp-20",
+    "subject": "expression",
+    "fr": "Demain",
+    "en": "Tomorrow",
+    "bu": "Okiti",
+    "phonetic": "o-ki-ti",
+    "part_of_speech": "adverb"
+  },
+  {
+    "id": "exp-21",
+    "subject": "expression",
+    "fr": "Hier",
+    "en": "Yesterday",
+    "bu": "Angu'ge",
+    "phonetic": "ang-ou-gué",
+    "part_of_speech": "adverb"
+  },
+  {
+    "id": "exp-22",
+    "subject": "expression",
+    "fr": "Maintenant",
+    "en": "Now",
+    "bu": "Éyoñ ji",
+    "phonetic": "é-yo-ñe dji",
+    "part_of_speech": "adverb"
+  },
+  {
+    "id": "exp-23",
+    "subject": "expression",
+    "fr": "J'ai faim",
+    "en": "I am hungry",
+    "bu": "Zi a bi me",
+    "phonetic": "zi a bi mé",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "exp-24",
+    "subject": "expression",
+    "fr": "J'ai soif",
+    "en": "I am thirsty",
+    "bu": "Mveng ñu a bi me",
+    "phonetic": "mveng gnou a bi mé",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "exp-25",
+    "subject": "expression",
+    "fr": "Je suis fatigué",
+    "en": "I am tired",
+    "bu": "Me mbé mvo'o",
+    "phonetic": "mé mbé mvo-o",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "exp-26",
+    "subject": "expression",
+    "fr": "Qu'est-ce que c'est ?",
+    "en": "What is it?",
+    "bu": "Jé le ?",
+    "phonetic": "djé lé",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "exp-27",
+    "subject": "expression",
+    "fr": "Qui est-ce ?",
+    "en": "Who is it?",
+    "bu": "Za a?",
+    "phonetic": "za a",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "exp-28",
+    "subject": "expression",
+    "fr": "Où est-ce ?",
+    "en": "Where is it?",
+    "bu": "Vé?",
+    "phonetic": "vé",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "exp-29",
+    "subject": "expression",
+    "fr": "Combien ?",
+    "en": "How much?",
+    "bu": "Abéñ?",
+    "phonetic": "a-béñ",
+    "part_of_speech": "adverb"
+  },
+  {
+    "id": "exp-30",
+    "subject": "expression",
+    "fr": "Viens ici",
+    "en": "Come here",
+    "bu": "Za'a va",
+    "phonetic": "za-a va",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "exp-31",
+    "subject": "expression",
+    "fr": "Allons-y",
+    "en": "Let's go",
+    "bu": "Bi ke",
+    "phonetic": "bi ké",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "exp-32",
+    "subject": "expression",
+    "fr": "Attends",
+    "en": "Wait",
+    "bu": "Begelé",
+    "phonetic": "bé-gué-lé",
+    "part_of_speech": "verb"
+  },
+  {
+    "id": "exp-33",
+    "subject": "expression",
+    "fr": "Regarde",
+    "en": "Look",
+    "bu": "Bé'é",
+    "phonetic": "bé-é",
+    "part_of_speech": "verb"
+  },
+  {
+    "id": "exp-34",
+    "subject": "expression",
+    "fr": "Écoute",
+    "en": "Listen",
+    "bu": "Wô'ô",
+    "phonetic": "wo-o",
+    "part_of_speech": "verb"
+  },
+  {
+    "id": "exp-35",
+    "subject": "expression",
+    "fr": "Je ne veux pas",
+    "en": "I don't want",
+    "bu": "Me nji kômbô",
+    "phonetic": "mé ndji ko-mbo",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "exp-36",
+    "subject": "expression",
+    "fr": "C'est bon / C'est bien",
+    "en": "It is good",
+    "bu": "Mva'a",
+    "phonetic": "mva-a",
+    "part_of_speech": "expression"
+  },
+  {
+    "id": "exp-37",
+    "subject": "expression",
+    "fr": "C'est fini",
+    "en": "It is finished",
+    "bu": "A maneya",
+    "phonetic": "a ma-né-ya",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "exp-38",
+    "subject": "expression",
+    "fr": "Il n'y a pas de problème",
+    "en": "No problem",
+    "bu": "Jam e ne momo",
+    "phonetic": "djam é né mo-mo",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "num-01",
+    "subject": "number",
+    "fr": "Un",
+    "en": "One",
+    "bu": "Fô'ô",
+    "phonetic": "fo-o",
+    "part_of_speech": "number"
+  },
+  {
+    "id": "num-02",
+    "subject": "number",
+    "fr": "Deux",
+    "en": "Two",
+    "bu": "Bèè",
+    "phonetic": "bè-è",
+    "part_of_speech": "number"
+  },
+  {
+    "id": "num-03",
+    "subject": "number",
+    "fr": "Trois",
+    "en": "Three",
+    "bu": "Lélè",
+    "phonetic": "lé-lè",
+    "part_of_speech": "number"
+  },
+  {
+    "id": "num-04",
+    "subject": "number",
+    "fr": "Quatre",
+    "en": "Four",
+    "bu": "Nyii",
+    "phonetic": "nyi-i",
+    "part_of_speech": "number"
+  },
+  {
+    "id": "num-05",
+    "subject": "number",
+    "fr": "Cinq",
+    "en": "Five",
+    "bu": "Tan",
+    "phonetic": "tan",
+    "part_of_speech": "number"
+  },
+  {
+    "id": "num-06",
+    "subject": "number",
+    "fr": "Six",
+    "en": "Six",
+    "bu": "Saman",
+    "phonetic": "sa-man",
+    "part_of_speech": "number"
+  },
+  {
+    "id": "num-07",
+    "subject": "number",
+    "fr": "Sept",
+    "en": "Seven",
+    "bu": "Zamgbwa",
+    "phonetic": "zam-gbwa",
+    "part_of_speech": "number"
+  },
+  {
+    "id": "num-08",
+    "subject": "number",
+    "fr": "Huit",
+    "en": "Eight",
+    "bu": "Mwôm",
+    "phonetic": "mwo-m",
+    "part_of_speech": "number"
+  },
+  {
+    "id": "num-09",
+    "subject": "number",
+    "fr": "Neuf",
+    "en": "Nine",
+    "bu": "Ébulu",
+    "phonetic": "é-bou-lou",
+    "part_of_speech": "number"
+  },
+  {
+    "id": "num-10",
+    "subject": "number",
+    "fr": "Dix",
+    "en": "Ten",
+    "bu": "Awôm",
+    "phonetic": "a-wo-m",
+    "part_of_speech": "number"
+  },
+  {
+    "id": "num-11",
+    "subject": "number",
+    "fr": "Onze",
+    "en": "Eleven",
+    "bu": "Awôm ba fô'ô",
+    "phonetic": "a-wo-m ba fo-o",
+    "part_of_speech": "number"
+  },
+  {
+    "id": "num-12",
+    "subject": "number",
+    "fr": "Douze",
+    "en": "Twelve",
+    "bu": "Awôm ba bèè",
+    "phonetic": "a-wo-m ba bè-è",
+    "part_of_speech": "number"
+  },
+  {
+    "id": "num-15",
+    "subject": "number",
+    "fr": "Quinze",
+    "en": "Fifteen",
+    "bu": "Awôm ba tan",
+    "phonetic": "a-wo-m ba tan",
+    "part_of_speech": "number"
+  },
+  {
+    "id": "num-20",
+    "subject": "number",
+    "fr": "Vingt",
+    "en": "Twenty",
+    "bu": "Mewôm bèè",
+    "phonetic": "mé-wo-m bè-è",
+    "part_of_speech": "number"
+  },
+  {
+    "id": "num-30",
+    "subject": "number",
+    "fr": "Trente",
+    "en": "Thirty",
+    "bu": "Mewôm lélè",
+    "phonetic": "mé-wo-m lé-lè",
+    "part_of_speech": "number"
+  },
+  {
+    "id": "num-40",
+    "subject": "number",
+    "fr": "Quarante",
+    "en": "Forty",
+    "bu": "Mewôm nyii",
+    "phonetic": "mé-wo-m nyi-i",
+    "part_of_speech": "number"
+  },
+  {
+    "id": "num-50",
+    "subject": "number",
+    "fr": "Cinquante",
+    "en": "Fifty",
+    "bu": "Mewôm tan",
+    "phonetic": "mé-wo-m tan",
+    "part_of_speech": "number"
+  },
+  {
+    "id": "num-100",
+    "subject": "number",
+    "fr": "Cent",
+    "en": "One hundred",
+    "bu": "Ntét",
+    "phonetic": "ntét",
+    "part_of_speech": "number"
+  },
+  {
+    "id": "num-200",
+    "subject": "number",
+    "fr": "Deux cents",
+    "en": "Two hundred",
+    "bu": "Mitét bèè",
+    "phonetic": "mi-tét bè-è",
+    "part_of_speech": "number"
+  },
+  {
+    "id": "num-1000",
+    "subject": "number",
+    "fr": "Mille",
+    "en": "One thousand",
+    "bu": "Tôyèn",
+    "phonetic": "to-yèn",
+    "part_of_speech": "number"
+  },
+  {
+    "id": "con-01",
+    "subject": "conjugation",
+    "fr": "Je suis",
+    "en": "I am",
+    "bu": "Me ne",
+    "phonetic": "mé né",
+    "part_of_speech": "verb"
+  },
+  {
+    "id": "con-02",
+    "subject": "conjugation",
+    "fr": "Tu es",
+    "en": "You are",
+    "bu": "Wo ne",
+    "phonetic": "wo né",
+    "part_of_speech": "verb"
+  },
+  {
+    "id": "con-03",
+    "subject": "conjugation",
+    "fr": "Il/Elle est",
+    "en": "He/She is",
+    "bu": "A ne",
+    "phonetic": "a né",
+    "part_of_speech": "verb"
+  },
+  {
+    "id": "con-04",
+    "subject": "conjugation",
+    "fr": "Nous sommes",
+    "en": "We are",
+    "bu": "Bi ne",
+    "phonetic": "bi né",
+    "part_of_speech": "verb"
+  },
+  {
+    "id": "con-05",
+    "subject": "conjugation",
+    "fr": "Vous êtes",
+    "en": "You are (pl)",
+    "bu": "Mi ne",
+    "phonetic": "mi né",
+    "part_of_speech": "verb"
+  },
+  {
+    "id": "con-06",
+    "subject": "conjugation",
+    "fr": "Ils/Elles sont",
+    "en": "They are",
+    "bu": "Be ne",
+    "phonetic": "bé né",
+    "part_of_speech": "verb"
+  },
+  {
+    "id": "con-07",
+    "subject": "conjugation",
+    "fr": "J'ai",
+    "en": "I have",
+    "bu": "Me bi",
+    "phonetic": "mé bi",
+    "part_of_speech": "verb"
+  },
+  {
+    "id": "con-08",
+    "subject": "conjugation",
+    "fr": "Tu as",
+    "en": "You have",
+    "bu": "Wo bi",
+    "phonetic": "wo bi",
+    "part_of_speech": "verb"
+  },
+  {
+    "id": "con-09",
+    "subject": "conjugation",
+    "fr": "Il/Elle a",
+    "en": "He/She has",
+    "bu": "A bi",
+    "phonetic": "a bi",
+    "part_of_speech": "verb"
+  },
+  {
+    "id": "con-10",
+    "subject": "conjugation",
+    "fr": "Nous avons",
+    "en": "We have",
+    "bu": "Bi bi",
+    "phonetic": "bi bi",
+    "part_of_speech": "verb"
+  },
+  {
+    "id": "con-11",
+    "subject": "conjugation",
+    "fr": "Vous avez",
+    "en": "You have (pl)",
+    "bu": "Mi bi",
+    "phonetic": "mi bi",
+    "part_of_speech": "verb"
+  },
+  {
+    "id": "con-12",
+    "subject": "conjugation",
+    "fr": "Ils/Elles ont",
+    "en": "They have",
+    "bu": "Be bi",
+    "phonetic": "bé bi",
+    "part_of_speech": "verb"
+  },
+  {
+    "id": "con-13",
+    "subject": "conjugation",
+    "fr": "Je vais",
+    "en": "I go",
+    "bu": "Ma ke",
+    "phonetic": "ma ké",
+    "part_of_speech": "verb"
+  },
+  {
+    "id": "con-14",
+    "subject": "conjugation",
+    "fr": "Tu vas",
+    "en": "You go",
+    "bu": "Wo ke",
+    "phonetic": "wo ké",
+    "part_of_speech": "verb"
+  },
+  {
+    "id": "con-15",
+    "subject": "conjugation",
+    "fr": "Il/Elle va",
+    "en": "He/She goes",
+    "bu": "A ke",
+    "phonetic": "a ké",
+    "part_of_speech": "verb"
+  },
+  {
+    "id": "con-16",
+    "subject": "conjugation",
+    "fr": "Nous allons",
+    "en": "We go",
+    "bu": "Bi a ke",
+    "phonetic": "bi a ké",
+    "part_of_speech": "verb"
+  },
+  {
+    "id": "con-17",
+    "subject": "conjugation",
+    "fr": "Vous allez",
+    "en": "You go (pl)",
+    "bu": "Mi a ke",
+    "phonetic": "mi a ké",
+    "part_of_speech": "verb"
+  },
+  {
+    "id": "con-18",
+    "subject": "conjugation",
+    "fr": "Ils/Elles vont",
+    "en": "They go",
+    "bu": "Be a ke",
+    "phonetic": "bé a ké",
+    "part_of_speech": "verb"
+  },
+  {
+    "id": "con-19",
+    "subject": "conjugation",
+    "fr": "Je parle",
+    "en": "I speak",
+    "bu": "Ma kobô",
+    "phonetic": "ma ko-bo",
+    "part_of_speech": "verb"
+  },
+  {
+    "id": "con-20",
+    "subject": "conjugation",
+    "fr": "Tu parles",
+    "en": "You speak",
+    "bu": "Wo kobô",
+    "phonetic": "wo ko-bo",
+    "part_of_speech": "verb"
+  },
+  {
+    "id": "con-21",
+    "subject": "conjugation",
+    "fr": "Il/Elle parle",
+    "en": "He/She speaks",
+    "bu": "A kobô",
+    "phonetic": "a ko-bo",
+    "part_of_speech": "verb"
+  },
+  {
+    "id": "con-22",
+    "subject": "conjugation",
+    "fr": "Nous parlons",
+    "en": "We speak",
+    "bu": "Bi a kobô",
+    "phonetic": "bi a ko-bo",
+    "part_of_speech": "verb"
+  },
+  {
+    "id": "con-23",
+    "subject": "conjugation",
+    "fr": "Je parle Bulu",
+    "en": "I speak Bulu",
+    "bu": "Ma kobô Bulu",
+    "phonetic": "ma ko-bo bou-lou",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "con-24",
+    "subject": "conjugation",
+    "fr": "Parles-tu Anglais ?",
+    "en": "Do you speak English?",
+    "bu": "Wo kobô Nglis?",
+    "phonetic": "wo ko-bo ngliss",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "pro-01",
+    "subject": "pronoun",
+    "fr": "Je",
+    "en": "I",
+    "bu": "Me / Ma",
+    "phonetic": "mé / ma",
+    "part_of_speech": "pronoun"
+  },
+  {
+    "id": "pro-02",
+    "subject": "pronoun",
+    "fr": "Tu",
+    "en": "You ",
+    "bu": "Wo",
+    "phonetic": "wo",
+    "part_of_speech": "pronoun"
+  },
+  {
+    "id": "pro-03",
+    "subject": "pronoun",
+    "fr": "Il / Elle",
+    "en": "He / She",
+    "bu": "A",
+    "phonetic": "a",
+    "part_of_speech": "pronoun"
+  },
+  {
+    "id": "pro-04",
+    "subject": "pronoun",
+    "fr": "Nous",
+    "en": "We",
+    "bu": "Bi",
+    "phonetic": "bi",
+    "part_of_speech": "pronoun"
+  },
+  {
+    "id": "pro-05",
+    "subject": "pronoun",
+    "fr": "Vous",
+    "en": "You ",
+    "bu": "Mi",
+    "phonetic": "mi",
+    "part_of_speech": "pronoun"
+  },
+  {
+    "id": "pro-06",
+    "subject": "pronoun",
+    "fr": "Ils / Elles",
+    "en": "They",
+    "bu": "Be",
+    "phonetic": "bé",
+    "part_of_speech": "pronoun"
+  },
+  {
+    "id": "art-01",
+    "subject": "article",
+    "fr": "Un / Une",
+    "en": "A / An",
+    "bu": "Fô'ô",
+    "phonetic": "fo-o",
+    "part_of_speech": "article"
+  },
+  {
+    "id": "art-02",
+    "subject": "article",
+    "fr": "Le / La (souvent omis)",
+    "en": "The",
+    "bu": "nyi",
+    "phonetic": "gni",
+    "part_of_speech": "article"
+  },
+  {
+    "id": "art-03",
+    "subject": "article",
+    "fr": "Ce / Cette (ci)",
+    "en": "This",
+    "bu": "Nyi",
+    "phonetic": "gni",
+    "part_of_speech": "demonstrative"
+  },
+  {
+    "id": "art-04",
+    "subject": "article",
+    "fr": "Ce / Cette (là)",
+    "en": "That",
+    "bu": "Nyo",
+    "phonetic": "gno",
+    "part_of_speech": "demonstrative"
+  },
+  {
+    "id": "art-05",
+    "subject": "article",
+    "fr": "Ces (pluriel)",
+    "en": "These",
+    "bu": "Ba",
+    "phonetic": "ba",
+    "part_of_speech": "demonstrative"
+  },
+  {
+    "id": "art-06",
+    "subject": "article",
+    "fr": "Quelque chose",
+    "en": "Something",
+    "bu": "Jam",
+    "phonetic": "djam",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "art-07",
+    "subject": "article",
+    "fr": "Tout / Tous",
+    "en": "All / Every",
+    "bu": "Ése",
+    "phonetic": "é-sé",
+    "part_of_speech": "adjective"
+  },
+  {
+    "id": "art-08",
+    "subject": "article",
+    "fr": "Autre",
+    "en": "Other",
+    "bu": "Fe",
+    "phonetic": "fé",
+    "part_of_speech": "adjective"
+  },
+  {
+    "id": "phr-09",
+    "subject": "phrase",
+    "fr": "Comment t'appelles-tu ?",
+    "en": "What is your name?",
+    "bu": "Jôé dôé na jé?",
+    "phonetic": "djo-é do-é na djé?",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "phr-10",
+    "subject": "phrase",
+    "fr": "Je m'appelle...",
+    "en": "My name is...",
+    "bu": "Jôé dam na...",
+    "phonetic": "djo-é dam na",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "phr-11",
+    "subject": "phrase",
+    "fr": "D'où viens-tu ?",
+    "en": "Where are you from?",
+    "bu": "Wo so vé?",
+    "phonetic": "wo so vé?",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "phr-12",
+    "subject": "phrase",
+    "fr": "Je viens du Cameroun",
+    "en": "I am from Cameroon",
+    "bu": "Ma so e Kamerun",
+    "phonetic": "ma so é Ka-mé-roun",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "phr-13",
+    "subject": "phrase",
+    "fr": "Où habites-tu ?",
+    "en": "Where do you live?",
+    "bu": "Wo nyi vé?",
+    "phonetic": "wo gni vé?",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "phr-14",
+    "subject": "phrase",
+    "fr": "J'habite ici",
+    "en": "I live here",
+    "bu": "Ma nyi va",
+    "phonetic": "ma gni va",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "phr-15",
+    "subject": "phrase",
+    "fr": "Je vais à la maison",
+    "en": "I am going home",
+    "bu": "Ma ke e nda",
+    "phonetic": "ma ké é nda",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "phr-16",
+    "subject": "phrase",
+    "fr": "Où est le marché ?",
+    "en": "Where is the market?",
+    "bu": "Markit a ne vé?",
+    "phonetic": "mar-kit a né vé?",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "phr-17",
+    "subject": "phrase",
+    "fr": "J'ai faim",
+    "en": "I am hungry",
+    "bu": "Zi a bi me",
+    "phonetic": "zi a bi mé",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "phr-18",
+    "subject": "phrase",
+    "fr": "Donne-moi de l'eau",
+    "en": "Give me water",
+    "bu": "Va'a me mendjim",
+    "phonetic": "va-a mé mèn-djim",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "phr-19",
+    "subject": "phrase",
+    "fr": "C'est combien ?",
+    "en": "How much is it?",
+    "bu": "A ne abéñ?",
+    "phonetic": "a né a-béñ?",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "phr-20",
+    "subject": "phrase",
+    "fr": "C'est trop cher !",
+    "en": "It's too expensive!",
+    "bu": "A ne étua dya!",
+    "phonetic": "a né é-tou-a dya!",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "phr-21",
+    "subject": "phrase",
+    "fr": "Je suis malade",
+    "en": "I am sick",
+    "bu": "Ma kon",
+    "phonetic": "ma kon",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "phr-22",
+    "subject": "phrase",
+    "fr": "Aide-moi",
+    "en": "Help me",
+    "bu": "Volô me",
+    "phonetic": "vo-lo mé",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "phr-23",
+    "subject": "phrase",
+    "fr": "Que dis-tu ?",
+    "en": "What are you saying?",
+    "bu": "Wo jô na jé?",
+    "phonetic": "wo djo na djé?",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "phr-24",
+    "subject": "phrase",
+    "fr": "Je comprends un peu",
+    "en": "I understand a little",
+    "bu": "Ma wô'ô abé'é",
+    "phonetic": "ma wo-o a-bé-é",
+    "part_of_speech": "phrase"
+  }
+]
