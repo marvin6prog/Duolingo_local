@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "433117123018",
+    "project_id": "chat-965cd",
+    "storage_bucket": "chat-965cd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433117123018:android:b96a43e2376b474ffa3f33",
+        "android_client_info": {
+          "package_name": "com.example.chat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-qHHkneAIva7iJH97_xFrcqIIhmP00cE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433117123018:android:597ec19dc336f575fa3f33",
+        "android_client_info": {
+          "package_name": "com.example.duolingo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-qHHkneAIva7iJH97_xFrcqIIhmP00cE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
