@@ -1258,5 +1258,185 @@
     "bu": "Ma wô'ô abé'é",
     "phonetic": "ma wo-o a-bé-é",
     "part_of_speech": "phrase"
+  },
+  {
+    "id": "fam-01",
+    "subject": "famille",
+    "fr": "La famille",
+    "en": "The family",
+    "bu": "Mvông bôt",
+    "phonetic": "mvong bot",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "fam-02",
+    "subject": "famille",
+    "fr": "Le père",
+    "en": "The father",
+    "bu": "Tara",
+    "phonetic": "tara",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "fam-03",
+    "subject": "famille",
+    "fr": "La mère",
+    "en": "The mother",
+    "bu": "Nana",
+    "phonetic": "nana",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "fam-04",
+    "subject": "famille",
+    "fr": "L'enfant",
+    "en": "The child",
+    "bu": "Môngö",
+    "phonetic": "mongo",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "fam-05",
+    "subject": "famille",
+    "fr": "Le fils",
+    "en": "The son",
+    "bu": "Mon fam",
+    "phonetic": "mon fam",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "fam-06",
+    "subject": "famille",
+    "fr": "La fille",
+    "en": "The daughter",
+    "bu": "Mon minga",
+    "phonetic": "mon minga",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "fam-07",
+    "subject": "famille",
+    "fr": "Le grand-père",
+    "en": "The grandfather",
+    "bu": "Mvama fam",
+    "phonetic": "mvama fam",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "fam-08",
+    "subject": "famille",
+    "fr": "La grand-mère",
+    "en": "The grandmother",
+    "bu": "Mvama minga",
+    "phonetic": "mvama minga",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "fam-09",
+    "subject": "famille",
+    "fr": "Le mari",
+    "en": "The husband",
+    "bu": "Fam",
+    "phonetic": "fam",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "fam-10",
+    "subject": "famille",
+    "fr": "La femme",
+    "en": "The wife",
+    "bu": "Minga",
+    "phonetic": "minga",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "ani-01",
+    "subject": "animaux",
+    "fr": "Le chien",
+    "en": "The dog",
+    "bu": "Mvu",
+    "phonetic": "mvu",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "ani-02",
+    "subject": "animaux",
+    "fr": "Le chat",
+    "en": "The cat",
+    "bu": "Singi",
+    "phonetic": "singi",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "ani-03",
+    "subject": "animaux",
+    "fr": "La chèvre",
+    "en": "The goat",
+    "bu": "Kabat",
+    "phonetic": "kabat",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "ani-04",
+    "subject": "animaux",
+    "fr": "Le poulet",
+    "en": "The chicken",
+    "bu": "Kup",
+    "phonetic": "kup",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "ani-05",
+    "subject": "animaux",
+    "fr": "Le cochon",
+    "en": "The pig",
+    "bu": "Ngul",
+    "phonetic": "ngoul",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "ani-06",
+    "subject": "animaux",
+    "fr": "L'oiseau",
+    "en": "The bird",
+    "bu": "Onon",
+    "phonetic": "onon",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "ani-07",
+    "subject": "animaux",
+    "fr": "Le poisson",
+    "en": "The fish",
+    "bu": "Kos",
+    "phonetic": "kos",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "ani-08",
+    "subject": "animaux",
+    "fr": "Le lion",
+    "en": "The lion",
+    "bu": "Ze",
+    "phonetic": "zé",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "ani-09",
+    "subject": "animaux",
+    "fr": "L'éléphant",
+    "en": "The elephant",
+    "bu": "Zok",
+    "phonetic": "zok",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "ani-10",
+    "subject": "animaux",
+    "fr": "Le serpent",
+    "en": "The snake",
+    "bu": "Nyô",
+    "phonetic": "nyo",
+    "part_of_speech": "noun"
   }
 ]
