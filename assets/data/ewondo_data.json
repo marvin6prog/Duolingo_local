@@ -1,0 +1,281 @@
+[
+  {
+    "id": "gre-01",
+    "subject": "salutation",
+    "fr": "Bonjour",
+    "en": "Hello",
+    "ew": "Mbege",
+    "phonetic": "mbe-gué",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "gre-02",
+    "subject": "salutation",
+    "fr": "Bonsoir",
+    "en": "Good evening",
+    "ew": "Mbamba kokoe",
+    "phonetic": "mbamba ko-ko-é",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "gre-03",
+    "subject": "salutation",
+    "fr": "Comment ça va ?",
+    "en": "How are you?",
+    "ew": "O ne ya?",
+    "phonetic": "o né ya?",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "gre-04",
+    "subject": "salutation",
+    "fr": "Ça va bien",
+    "en": "I am fine",
+    "ew": "Me ne mbege",
+    "phonetic": "mé né mbe-gué",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "gre-05",
+    "subject": "salutation",
+    "fr": "Merci",
+    "en": "Thank you",
+    "ew": "Abui ngen",
+    "phonetic": "a-boui ngen",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "gre-06",
+    "subject": "salutation",
+    "fr": "S'il vous plaît",
+    "en": "Please",
+    "ew": "Wa dzo na dze",
+    "phonetic": "wa dzo na dze",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "gre-07",
+    "subject": "salutation",
+    "fr": "Au revoir",
+    "en": "Goodbye",
+    "ew": "Mene ke",
+    "phonetic": "mé-né ké",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "num-01",
+    "subject": "number",
+    "fr": "Un",
+    "en": "One",
+    "ew": "Fos",
+    "phonetic": "fos",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "num-02",
+    "subject": "number",
+    "fr": "Deux",
+    "en": "Two",
+    "ew": "Be",
+    "phonetic": "bé",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "num-03",
+    "subject": "number",
+    "fr": "Trois",
+    "en": "Three",
+    "ew": "Le",
+    "phonetic": "lé",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "num-04",
+    "subject": "number",
+    "fr": "Quatre",
+    "en": "Four",
+    "ew": "Nyi",
+    "phonetic": "nyi",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "num-05",
+    "subject": "number",
+    "fr": "Cinq",
+    "en": "Five",
+    "ew": "Tan",
+    "phonetic": "tan",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "num-06",
+    "subject": "number",
+    "fr": "Six",
+    "en": "Six",
+    "ew": "Saman",
+    "phonetic": "sa-man",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "num-07",
+    "subject": "number",
+    "fr": "Sept",
+    "en": "Seven",
+    "ew": "Zangba",
+    "phonetic": "zang-ba",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "num-08",
+    "subject": "number",
+    "fr": "Huit",
+    "en": "Eight",
+    "ew": "Moom",
+    "phonetic": "mo-om",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "num-09",
+    "subject": "number",
+    "fr": "Neuf",
+    "en": "Nine",
+    "ew": "Ebulu",
+    "phonetic": "é-bou-lou",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "num-10",
+    "subject": "number",
+    "fr": "Dix",
+    "en": "Ten",
+    "ew": "Awom",
+    "phonetic": "a-wom",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "fam-01",
+    "subject": "famille",
+    "fr": "Le père",
+    "en": "The father",
+    "ew": "Esa",
+    "phonetic": "é-sa",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "fam-02",
+    "subject": "famille",
+    "fr": "La mère",
+    "en": "The mother",
+    "ew": "Nna",
+    "phonetic": "nna",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "fam-03",
+    "subject": "famille",
+    "fr": "L'enfant",
+    "en": "The child",
+    "ew": "Mongö",
+    "phonetic": "mon-go",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "fam-04",
+    "subject": "famille",
+    "fr": "Le frère",
+    "en": "The brother",
+    "ew": "Mone-ang",
+    "phonetic": "mon-é-ang",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "fam-05",
+    "subject": "famille",
+    "fr": "La sœur",
+    "en": "The sister",
+    "ew": "Kal",
+    "phonetic": "kal",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "ani-01",
+    "subject": "animaux",
+    "fr": "Le chien",
+    "en": "The dog",
+    "ew": "Mvu",
+    "phonetic": "mvu",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "ani-02",
+    "subject": "animaux",
+    "fr": "Le chat",
+    "en": "The cat",
+    "ew": "Singi",
+    "phonetic": "sin-gui",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "ani-03",
+    "subject": "animaux",
+    "fr": "L'oiseau",
+    "en": "The bird",
+    "ew": "Onon",
+    "phonetic": "o-non",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "ani-04",
+    "subject": "animaux",
+    "fr": "Le poisson",
+    "en": "The fish",
+    "ew": "Kos",
+    "phonetic": "kos",
+    "part_of_speech": "noun"
+  },
+  {
+    "id": "phr-01",
+    "subject": "phrase",
+    "fr": "J'ai faim",
+    "en": "I am hungry",
+    "ew": "Ma wog zi",
+    "phonetic": "ma wog zi",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "phr-02",
+    "subject": "phrase",
+    "fr": "J'ai soif",
+    "en": "I am thirsty",
+    "ew": "Ma wog evele",
+    "phonetic": "ma wog é-vé-lé",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "phr-03",
+    "subject": "phrase",
+    "fr": "Je t'aime",
+    "en": "I love you",
+    "ew": "Ma dzing wa",
+    "phonetic": "ma dzing wa",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "phr-04",
+    "subject": "phrase",
+    "fr": "Où vas-tu ?",
+    "en": "Where are you going?",
+    "ew": "O ke ve?",
+    "phonetic": "o ké vé?",
+    "part_of_speech": "phrase"
+  },
+  {
+    "id": "phr-05",
+    "subject": "phrase",
+    "fr": "Viens ici",
+    "en": "Come here",
+    "ew": "Zun mu",
+    "phonetic": "zoun mou",
+    "part_of_speech": "phrase"
+  }
+]
