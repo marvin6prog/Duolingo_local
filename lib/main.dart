@@ -28,7 +28,6 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF58CC02)),
-          useMaterialDesign: true,
         ),
         home: const AuthWrapper(),
       ),

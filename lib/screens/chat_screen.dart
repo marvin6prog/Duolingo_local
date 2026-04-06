@@ -338,6 +338,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
   String _getLanguageName(Language language) {
     switch (language) {
+      case Language.ewondo:
       case Language.bulu:
         return 'Bulu';
       case Language.bassaa:

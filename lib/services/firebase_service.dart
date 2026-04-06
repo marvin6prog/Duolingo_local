@@ -55,7 +55,7 @@ class FirebaseService {
     }
   }
 
-  static Future<UserProgress> createInitialUserProgress(String userId) {
+  static Future<UserProgress> createInitialUserProgress(String userId) async {
     return UserProgress(
       userId: userId,
       sourceLanguage: Language.ewondo,

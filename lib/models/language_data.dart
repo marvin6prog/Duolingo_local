@@ -69,10 +69,10 @@ class UserProgress {
   final Language sourceLanguage;
   final Language targetLanguage;
   final Map<Subject, int> completedLevels;
-  final int totalXP;
-  final int hearts;
-  final DateTime? lastLessonDate;
-  final int streak;
+  int totalXP;
+  int hearts;
+  DateTime? lastLessonDate;
+  int streak;
 
   UserProgress({
     required this.userId,

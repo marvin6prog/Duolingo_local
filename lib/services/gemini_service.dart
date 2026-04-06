@@ -1,12 +1,12 @@
-import 'package:google_generative_ai/google_generative_ai.dart';
-import '../models/language_data.dart';
+import 'package:google_generative_ai/google_generative_ai.dart' as genai;
+import '../models/language_data.dart' as ld;
 
 class GeminiService {
   static const String _apiKey = 'AIzaSyAnJiBE9J8rWi4Ik4jNXDnHfRW4TEPAIi4';
-  static late final GenerativeModel _model;
+  static late final genai.GenerativeModel _model;
 
   static void initialize() {
-    _model = GenerativeModel(
+    _model = genai.GenerativeModel(
       model: 'gemini-1.5-flash',
       apiKey: _apiKey,
     );
@@ -14,7 +14,7 @@ class GeminiService {
 
   static Future<String> getLanguageHelp({
     required String query,
-    required Language targetLanguage,
+    required ld.Language targetLanguage,
     required String sourceLanguage,
   }) async {
     try {
@@ -34,8 +34,8 @@ Si la question concerne la grammaire, explique les règles clairement.
 Sois concis mais complet.
 ''';
 
-      final content = Content.text(prompt);
-      final response = await _model.generateContent(content);
+      final content = genai.Content.text(prompt);
+      final response = await _model.generateContent([content]);
       return response.text ?? 'Désolé, je n\'ai pas pu traiter votre demande.';
     } catch (e) {
       print('Error calling Gemini: $e');
@@ -45,7 +45,7 @@ Sois concis mais complet.
 
   static Future<String> getWordInfo({
     required String word,
-    required Language targetLanguage,
+    required ld.Language targetLanguage,
     required String sourceLanguage,
   }) async {
     try {
@@ -62,8 +62,8 @@ Donne-moi des informations complètes sur le mot "$word" en $languageName pour u
 Sois précis et formaté de manière lisible.
 ''';
 
-      final content = Content.text(prompt);
-      final response = await _model.generateContent(content);
+      final content = genai.Content.text(prompt);
+      final response = await _model.generateContent([content]);
       return response.text ?? 'Informations non disponibles pour ce mot.';
     } catch (e) {
       print('Error getting word info: $e');
@@ -73,7 +73,7 @@ Sois précis et formaté de manière lisible.
 
   static Future<String> getPronunciationHelp({
     required String word,
-    required Language targetLanguage,
+    required ld.Language targetLanguage,
   }) async {
     try {
       final languageName = targetLanguage.name;
@@ -88,8 +88,8 @@ Explique comment prononcer le mot "$word" en $languageName:
 Sois très détaillé dans l'explication phonétique.
 ''';
 
-      final content = Content.text(prompt);
-      final response = await _model.generateContent(content);
+      final content = genai.Content.text(prompt);
+      final response = await _model.generateContent([content]);
       return response.text ?? 'Aide de prononciation non disponible.';
     } catch (e) {
       print('Error getting pronunciation help: $e');
@@ -99,7 +99,7 @@ Sois très détaillé dans l'explication phonétique.
 
   static Future<String> getGrammarExplanation({
     required String topic,
-    required Language targetLanguage,
+    required ld.Language targetLanguage,
     required String sourceLanguage,
   }) async {
     try {
@@ -115,8 +115,8 @@ Explique la règle de grammaire "$topic" en $languageName pour un apprenant $sou
 Sois pédagogique et structuré.
 ''';
 
-      final content = Content.text(prompt);
-      final response = await _model.generateContent(content);
+      final content = genai.Content.text(prompt);
+      final response = await _model.generateContent([content]);
       return response.text ?? 'Explication grammaticale non disponible.';
     } catch (e) {
       print('Error getting grammar explanation: $e');
