@@ -34,13 +34,10 @@ class UserProvider with ChangeNotifier {
 
   Future<void> _loadUserData() async {
     if (_user == null) return;
-    
+
     _setLoading(true);
     try {
-      await Future.wait([
-        _loadUserProgress(),
-        _loadUserProfile(),
-      ]);
+      await Future.wait([_loadUserProgress(), _loadUserProfile()]);
     } catch (e) {
       print('Error loading user data: $e');
     } finally {
@@ -50,9 +47,11 @@ class UserProvider with ChangeNotifier {
 
   Future<void> _loadUserProgress() async {
     _userProgress = await FirebaseService.getUserProgress(_user!.uid);
-    
+
     if (_userProgress == null) {
-      _userProgress = await FirebaseService.createInitialUserProgress(_user!.uid);
+      _userProgress = await FirebaseService.createInitialUserProgress(
+        _user!.uid,
+      );
       await FirebaseService.saveUserProgress(_userProgress!);
     }
   }
@@ -75,10 +74,12 @@ class UserProvider with ChangeNotifier {
     _setLoading(true);
     try {
       final credential = await FirebaseService.signUpWithEmail(email, password);
-      
-      final progress = await FirebaseService.createInitialUserProgress(credential.user!.uid);
+
+      final progress = await FirebaseService.createInitialUserProgress(
+        credential.user!.uid,
+      );
       await FirebaseService.saveUserProgress(progress);
-      
+
       await FirebaseService.saveUserProfile(
         userId: credential.user!.uid,
         displayName: displayName,
@@ -109,7 +110,7 @@ class UserProvider with ChangeNotifier {
 
   Future<void> addXP(int xp) async {
     if (_userProgress == null || _user == null) return;
-    
+
     try {
       await FirebaseService.updateUserXP(_user!.uid, xp);
       _userProgress!.totalXP += xp;
@@ -121,7 +122,7 @@ class UserProvider with ChangeNotifier {
 
   Future<void> updateHearts(int hearts) async {
     if (_userProgress == null || _user == null) return;
-    
+
     try {
       await FirebaseService.updateUserHearts(_user!.uid, hearts);
       _userProgress!.hearts = hearts;
@@ -133,7 +134,7 @@ class UserProvider with ChangeNotifier {
 
   Future<void> completeSubjectLevel(Subject subject, int level) async {
     if (_userProgress == null || _user == null) return;
-    
+
     try {
       final currentLevel = _userProgress!.completedLevels[subject] ?? 0;
       if (level > currentLevel) {
@@ -148,13 +149,13 @@ class UserProvider with ChangeNotifier {
 
   Future<void> updateStreak() async {
     if (_userProgress == null || _user == null) return;
-    
+
     try {
       final now = DateTime.now();
       final lastLesson = _userProgress!.lastLessonDate;
-      
+
       int newStreak = 1;
-      
+
       if (lastLesson != null) {
         final difference = now.difference(lastLesson).inDays;
         if (difference == 1) {
@@ -165,7 +166,7 @@ class UserProvider with ChangeNotifier {
           newStreak = _userProgress!.streak;
         }
       }
-      
+
       await FirebaseService.updateStreak(_user!.uid, newStreak);
       _userProgress!.streak = newStreak;
       _userProgress!.lastLessonDate = now;
@@ -180,21 +181,24 @@ class UserProvider with ChangeNotifier {
     required Language targetLanguage,
   }) async {
     if (_user == null) return;
-    
+
     try {
       await FirebaseService.saveUserProfile(
         userId: _user!.uid,
-        displayName: _userProfile?['displayName'] ?? _user!.email?.split('@')[0] ?? 'User',
+        displayName:
+            _userProfile?['displayName'] ??
+            _user!.email?.split('@')[0] ??
+            'User',
         sourceLanguage: sourceLanguage,
         targetLanguage: targetLanguage,
       );
-      
+
       if (_userProgress != null) {
         _userProgress!.sourceLanguage = sourceLanguage;
         _userProgress!.targetLanguage = targetLanguage;
         await FirebaseService.saveUserProgress(_userProgress!);
       }
-      
+
       await _loadUserProfile();
       notifyListeners();
     } catch (e) {

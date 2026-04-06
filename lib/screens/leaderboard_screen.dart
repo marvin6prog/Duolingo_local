@@ -45,10 +45,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
         elevation: 0,
         title: const Text(
           'Classement',
-          style: TextStyle(
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-          ),
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
       ),
       body: _isLoading
@@ -57,7 +54,9 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   CircularProgressIndicator(
-                    valueColor: AlwaysStoppedAnimation<Color>(Color(0xFF58CC02)),
+                    valueColor: AlwaysStoppedAnimation<Color>(
+                      Color(0xFF58CC02),
+                    ),
                   ),
                   SizedBox(height: 20),
                   Text(
@@ -68,58 +67,48 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
               ),
             )
           : _leaderboard.isEmpty
-              ? Center(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.leaderboard,
-                        size: 80,
-                        color: Colors.grey[400],
-                      ),
-                      const SizedBox(height: 20),
-                      Text(
-                        'Aucun classement disponible',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.grey[600],
-                        ),
-                      ),
-                      const SizedBox(height: 8),
-                      Text(
-                        'Soyez le premier à marquer des points !',
-                        style: TextStyle(
-                          fontSize: 14,
-                          color: Colors.grey[500],
-                        ),
-                      ),
-                    ],
+          ? Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.leaderboard, size: 80, color: Colors.grey[400]),
+                  const SizedBox(height: 20),
+                  Text(
+                    'Aucun classement disponible',
+                    style: TextStyle(fontSize: 18, color: Colors.grey[600]),
                   ),
-                )
-              : RefreshIndicator(
-                  onRefresh: _loadLeaderboard,
-                  child: Column(
-                    children: [
-                      _buildTopThree(),
-                      Expanded(
-                        child: ListView.builder(
-                          padding: const EdgeInsets.all(16),
-                          itemCount: _leaderboard.length,
-                          itemBuilder: (context, index) {
-                            if (index < 3) return const SizedBox.shrink();
-                            return _buildLeaderboardItem(index);
-                          },
-                        ),
-                      ),
-                    ],
+                  const SizedBox(height: 8),
+                  Text(
+                    'Soyez le premier à marquer des points !',
+                    style: TextStyle(fontSize: 14, color: Colors.grey[500]),
                   ),
-                ),
+                ],
+              ),
+            )
+          : RefreshIndicator(
+              onRefresh: _loadLeaderboard,
+              child: Column(
+                children: [
+                  _buildTopThree(),
+                  Expanded(
+                    child: ListView.builder(
+                      padding: const EdgeInsets.all(16),
+                      itemCount: _leaderboard.length,
+                      itemBuilder: (context, index) {
+                        if (index < 3) return const SizedBox.shrink();
+                        return _buildLeaderboardItem(index);
+                      },
+                    ),
+                  ),
+                ],
+              ),
+            ),
     );
   }
 
   Widget _buildTopThree() {
     if (_leaderboard.length < 3) return const SizedBox.shrink();
-    
+
     return Container(
       margin: const EdgeInsets.all(16),
       padding: const EdgeInsets.all(20),
@@ -133,9 +122,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
           end: Alignment.bottomCenter,
         ),
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(
-          color: const Color(0xFF58CC02).withOpacity(0.2),
-        ),
+        border: Border.all(color: const Color(0xFF58CC02).withOpacity(0.2)),
       ),
       child: Column(
         children: [
@@ -239,104 +226,113 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
   Widget _buildLeaderboardItem(int index) {
     final user = _leaderboard[index];
     final rank = index + 1;
-    
+
     return Container(
-      margin: const EdgeInsets.only(bottom: 12),
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(12),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withOpacity(0.05),
-            blurRadius: 8,
-            offset: const Offset(0, 2),
-          ),
-        ],
-      ),
-      child: ListTile(
-        contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
-        leading: Container(
-          width: 40,
-          height: 40,
+          margin: const EdgeInsets.only(bottom: 12),
           decoration: BoxDecoration(
-            color: rank <= 3 
-                ? _getMedalColor(rank)
-                : const Color(0xFF58CC02).withOpacity(0.1),
-            borderRadius: BorderRadius.circular(20),
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(12),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withOpacity(0.05),
+                blurRadius: 8,
+                offset: const Offset(0, 2),
+              ),
+            ],
           ),
-          child: Center(
-            child: Text(
-              '$rank',
-              style: TextStyle(
-                color: rank <= 3 ? Colors.white : const Color(0xFF58CC02),
-                fontSize: 16,
-                fontWeight: FontWeight.bold,
-              ),
+          child: ListTile(
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: 20,
+              vertical: 8,
             ),
-          ),
-        ),
-        title: Row(
-          children: [
-            CircleAvatar(
-              radius: 16,
-              backgroundColor: const Color(0xFF58CC02),
-              child: Text(
-                'U${user['userId'].substring(0, 2).toUpperCase()}',
-                style: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 12,
-                  fontWeight: FontWeight.bold,
-                ),
+            leading: Container(
+              width: 40,
+              height: 40,
+              decoration: BoxDecoration(
+                color: rank <= 3
+                    ? _getMedalColor(rank)
+                    : const Color(0xFF58CC02).withOpacity(0.1),
+                borderRadius: BorderRadius.circular(20),
               ),
-            ),
-            const SizedBox(width: 12),
-            Expanded(
-              child: Text(
-                'Utilisateur ${user['userId'].substring(0, 8)}...',
-                style: const TextStyle(
-                  fontWeight: FontWeight.w600,
-                  color: Color(0xFF3C3C3C),
-                ),
-              ),
-            ),
-          ],
-        ),
-        trailing: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.end,
-          children: [
-            Text(
-              '${user['totalXP']} XP',
-              style: const TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.bold,
-                color: Color(0xFF58CC02),
-              ),
-            ),
-            if (user['streak'] > 0)
-              Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  const Icon(
-                    Icons.local_fire_department,
-                    color: Colors.orange,
-                    size: 14,
+              child: Center(
+                child: Text(
+                  '$rank',
+                  style: TextStyle(
+                    color: rank <= 3 ? Colors.white : const Color(0xFF58CC02),
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
                   ),
-                  const SizedBox(width: 2),
-                  Text(
-                    '${user['streak']}',
+                ),
+              ),
+            ),
+            title: Row(
+              children: [
+                CircleAvatar(
+                  radius: 16,
+                  backgroundColor: const Color(0xFF58CC02),
+                  child: Text(
+                    'U${user['userId'].substring(0, 2).toUpperCase()}',
                     style: const TextStyle(
+                      color: Colors.white,
                       fontSize: 12,
-                      color: Colors.orange,
-                      fontWeight: FontWeight.w600,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
-                ],
-              ),
-          ],
-        ),
-      ),
-    ).animate().fadeIn(duration: 300.ms, delay: Duration(milliseconds: index * 50)).slideX(begin: 0.1);
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Text(
+                    'Utilisateur ${user['userId'].substring(0, 8)}...',
+                    style: const TextStyle(
+                      fontWeight: FontWeight.w600,
+                      color: Color(0xFF3C3C3C),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            trailing: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Text(
+                  '${user['totalXP']} XP',
+                  style: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFF58CC02),
+                  ),
+                ),
+                if (user['streak'] > 0)
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const Icon(
+                        Icons.local_fire_department,
+                        color: Colors.orange,
+                        size: 14,
+                      ),
+                      const SizedBox(width: 2),
+                      Text(
+                        '${user['streak']}',
+                        style: const TextStyle(
+                          fontSize: 12,
+                          color: Colors.orange,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ],
+                  ),
+              ],
+            ),
+          ),
+        )
+        .animate()
+        .fadeIn(
+          duration: 300.ms,
+          delay: Duration(milliseconds: index * 50),
+        )
+        .slideX(begin: 0.1);
   }
 
   Color _getMedalColor(int rank) {

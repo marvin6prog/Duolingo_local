@@ -83,5 +83,4 @@ class DefaultFirebaseOptions {
     authDomain: 'duolingo-1dfff.firebaseapp.com',
     storageBucket: 'duolingo-1dfff.firebasestorage.app',
   );
-
 }

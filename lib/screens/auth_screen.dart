@@ -16,7 +16,7 @@ class _AuthScreenState extends State<AuthScreen> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
   final _displayNameController = TextEditingController();
-  
+
   bool _isLogin = true;
   bool _isLoading = false;
   bool _obscurePassword = true;
@@ -36,7 +36,7 @@ class _AuthScreenState extends State<AuthScreen> {
 
     try {
       final userProvider = Provider.of<UserProvider>(context, listen: false);
-      
+
       if (_isLogin) {
         await userProvider.signIn(
           _emailController.text.trim(),
@@ -53,7 +53,11 @@ class _AuthScreenState extends State<AuthScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text(_isLogin ? 'Erreur de connexion: $e' : 'Erreur d\'inscription: $e'),
+            content: Text(
+              _isLogin
+                  ? 'Erreur de connexion: $e'
+                  : 'Erreur d\'inscription: $e',
+            ),
             backgroundColor: Colors.red,
           ),
         );
@@ -110,15 +114,14 @@ class _AuthScreenState extends State<AuthScreen> {
                 ),
                 const SizedBox(height: 10),
                 Text(
-                  _isLogin ? 'Connectez-vous pour continuer' : 'Créez votre compte',
-                  style: const TextStyle(
-                    fontSize: 16,
-                    color: Colors.white70,
-                  ),
+                  _isLogin
+                      ? 'Connectez-vous pour continuer'
+                      : 'Créez votre compte',
+                  style: const TextStyle(fontSize: 16, color: Colors.white70),
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 40),
-                
+
                 if (!_isLogin) ...[
                   _buildTextField(
                     controller: _displayNameController,
@@ -133,7 +136,7 @@ class _AuthScreenState extends State<AuthScreen> {
                   ),
                   const SizedBox(height: 20),
                 ],
-                
+
                 _buildTextField(
                   controller: _emailController,
                   label: 'Email',
@@ -150,7 +153,7 @@ class _AuthScreenState extends State<AuthScreen> {
                   },
                 ),
                 const SizedBox(height: 20),
-                
+
                 _buildTextField(
                   controller: _passwordController,
                   label: 'Mot de passe',
@@ -158,7 +161,9 @@ class _AuthScreenState extends State<AuthScreen> {
                   obscureText: _obscurePassword,
                   suffixIcon: IconButton(
                     icon: Icon(
-                      _obscurePassword ? Icons.visibility : Icons.visibility_off,
+                      _obscurePassword
+                          ? Icons.visibility
+                          : Icons.visibility_off,
                     ),
                     onPressed: () {
                       setState(() => _obscurePassword = !_obscurePassword);
@@ -175,7 +180,7 @@ class _AuthScreenState extends State<AuthScreen> {
                   },
                 ),
                 const SizedBox(height: 30),
-                
+
                 ElevatedButton(
                   onPressed: _isLoading ? null : _submit,
                   style: ElevatedButton.styleFrom(
@@ -189,7 +194,9 @@ class _AuthScreenState extends State<AuthScreen> {
                   ),
                   child: _isLoading
                       ? const CircularProgressIndicator(
-                          valueColor: AlwaysStoppedAnimation<Color>(Color(0xFF58CC02)),
+                          valueColor: AlwaysStoppedAnimation<Color>(
+                            Color(0xFF58CC02),
+                          ),
                         )
                       : Text(
                           _isLogin ? 'Se connecter' : 'S\'inscrire',
@@ -200,7 +207,7 @@ class _AuthScreenState extends State<AuthScreen> {
                         ),
                 ),
                 const SizedBox(height: 20),
-                
+
                 TextButton(
                   onPressed: () {
                     setState(() => _isLogin = !_isLogin);
@@ -209,23 +216,17 @@ class _AuthScreenState extends State<AuthScreen> {
                     _isLogin
                         ? 'Pas encore de compte ? S\'inscrire'
                         : 'Déjà un compte ? Se connecter',
-                    style: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 16,
-                    ),
+                    style: const TextStyle(color: Colors.white, fontSize: 16),
                   ),
                 ),
-                
+
                 if (_isLogin) ...[
                   const SizedBox(height: 10),
                   TextButton(
                     onPressed: _resetPassword,
                     child: const Text(
                       'Mot de passe oublié ?',
-                      style: TextStyle(
-                        color: Colors.white70,
-                        fontSize: 14,
-                      ),
+                      style: TextStyle(color: Colors.white70, fontSize: 14),
                     ),
                   ),
                 ],
@@ -264,7 +265,10 @@ class _AuthScreenState extends State<AuthScreen> {
             borderRadius: BorderRadius.circular(12),
             borderSide: BorderSide.none,
           ),
-          contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+          contentPadding: const EdgeInsets.symmetric(
+            horizontal: 20,
+            vertical: 16,
+          ),
         ),
       ),
     );
@@ -285,7 +289,7 @@ class _AuthScreenState extends State<AuthScreen> {
     try {
       final userProvider = Provider.of<UserProvider>(context, listen: false);
       await userProvider.resetPassword(email);
-      
+
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
@@ -297,10 +301,7 @@ class _AuthScreenState extends State<AuthScreen> {
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Erreur: $e'),
-            backgroundColor: Colors.red,
-          ),
+          SnackBar(content: Text('Erreur: $e'), backgroundColor: Colors.red),
         );
       }
     }

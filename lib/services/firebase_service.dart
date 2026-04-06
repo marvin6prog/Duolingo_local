@@ -10,12 +10,24 @@ class FirebaseService {
 
   static Stream<User?> get authStateChanges => _auth.authStateChanges();
 
-  static Future<UserCredential> signInWithEmail(String email, String password) async {
-    return await _auth.signInWithEmailAndPassword(email: email, password: password);
+  static Future<UserCredential> signInWithEmail(
+    String email,
+    String password,
+  ) async {
+    return await _auth.signInWithEmailAndPassword(
+      email: email,
+      password: password,
+    );
   }
 
-  static Future<UserCredential> signUpWithEmail(String email, String password) async {
-    return await _auth.createUserWithEmailAndPassword(email: email, password: password);
+  static Future<UserCredential> signUpWithEmail(
+    String email,
+    String password,
+  ) async {
+    return await _auth.createUserWithEmailAndPassword(
+      email: email,
+      password: password,
+    );
   }
 
   static Future<void> signOut() async {
@@ -44,7 +56,7 @@ class FirebaseService {
           .collection('user_progress')
           .doc(userId)
           .get();
-      
+
       if (doc.exists) {
         return UserProgress.fromJson(doc.data()!);
       }
@@ -79,12 +91,9 @@ class FirebaseService {
 
   static Future<void> updateUserXP(String userId, int xpToAdd) async {
     try {
-      await _firestore
-          .collection('user_progress')
-          .doc(userId)
-          .update({
-            'totalXP': FieldValue.increment(xpToAdd),
-          });
+      await _firestore.collection('user_progress').doc(userId).update({
+        'totalXP': FieldValue.increment(xpToAdd),
+      });
     } catch (e) {
       print('Error updating user XP: $e');
       rethrow;
@@ -93,12 +102,9 @@ class FirebaseService {
 
   static Future<void> updateUserHearts(String userId, int hearts) async {
     try {
-      await _firestore
-          .collection('user_progress')
-          .doc(userId)
-          .update({
-            'hearts': hearts,
-          });
+      await _firestore.collection('user_progress').doc(userId).update({
+        'hearts': hearts,
+      });
     } catch (e) {
       print('Error updating user hearts: $e');
       rethrow;
@@ -111,12 +117,9 @@ class FirebaseService {
     int level,
   ) async {
     try {
-      await _firestore
-          .collection('user_progress')
-          .doc(userId)
-          .update({
-            'completedLevels.${subject.name}': level,
-          });
+      await _firestore.collection('user_progress').doc(userId).update({
+        'completedLevels.${subject.name}': level,
+      });
     } catch (e) {
       print('Error updating subject level: $e');
       rethrow;
@@ -125,13 +128,10 @@ class FirebaseService {
 
   static Future<void> updateStreak(String userId, int streak) async {
     try {
-      await _firestore
-          .collection('user_progress')
-          .doc(userId)
-          .update({
-            'streak': streak,
-            'lastLessonDate': DateTime.now().toIso8601String(),
-          });
+      await _firestore.collection('user_progress').doc(userId).update({
+        'streak': streak,
+        'lastLessonDate': DateTime.now().toIso8601String(),
+      });
     } catch (e) {
       print('Error updating streak: $e');
       rethrow;
@@ -145,7 +145,7 @@ class FirebaseService {
           .orderBy('totalXP', descending: true)
           .limit(10)
           .get();
-      
+
       return snapshot.docs.map((doc) {
         final data = doc.data();
         return {
@@ -168,15 +168,12 @@ class FirebaseService {
     required Language targetLanguage,
   }) async {
     try {
-      await _firestore
-          .collection('users')
-          .doc(userId)
-          .set({
-            'displayName': displayName,
-            'sourceLanguage': sourceLanguage.name,
-            'targetLanguage': targetLanguage.name,
-            'createdAt': FieldValue.serverTimestamp(),
-          }, SetOptions(merge: true));
+      await _firestore.collection('users').doc(userId).set({
+        'displayName': displayName,
+        'sourceLanguage': sourceLanguage.name,
+        'targetLanguage': targetLanguage.name,
+        'createdAt': FieldValue.serverTimestamp(),
+      }, SetOptions(merge: true));
     } catch (e) {
       print('Error saving user profile: $e');
       rethrow;
@@ -185,11 +182,8 @@ class FirebaseService {
 
   static Future<Map<String, dynamic>?> getUserProfile(String userId) async {
     try {
-      final doc = await _firestore
-          .collection('users')
-          .doc(userId)
-          .get();
-      
+      final doc = await _firestore.collection('users').doc(userId).get();
+
       return doc.exists ? doc.data() : null;
     } catch (e) {
       print('Error getting user profile: $e');

@@ -6,10 +6,7 @@ class GeminiService {
   static late final genai.GenerativeModel _model;
 
   static void initialize() {
-    _model = genai.GenerativeModel(
-      model: 'gemini-1.5-flash',
-      apiKey: _apiKey,
-    );
+    _model = genai.GenerativeModel(model: 'gemini-1.5-flash', apiKey: _apiKey);
   }
 
   static Future<String> getLanguageHelp({
@@ -19,7 +16,8 @@ class GeminiService {
   }) async {
     try {
       final languageName = targetLanguage.name;
-      final prompt = '''
+      final prompt =
+          '''
 Tu es un assistant expert pour l'apprentissage des langues camerounaises, spécialisé en $languageName.
 L'utilisateur parle $sourceLanguage et pose la question suivante: "$query"
 
@@ -50,7 +48,8 @@ Sois concis mais complet.
   }) async {
     try {
       final languageName = targetLanguage.name;
-      final prompt = '''
+      final prompt =
+          '''
 Donne-moi des informations complètes sur le mot "$word" en $languageName pour un apprenant $sourceLanguage:
 
 1. Traduction en $sourceLanguage
@@ -77,7 +76,8 @@ Sois précis et formaté de manière lisible.
   }) async {
     try {
       final languageName = targetLanguage.name;
-      final prompt = '''
+      final prompt =
+          '''
 Explique comment prononcer le mot "$word" en $languageName:
 
 1. Décomposition phonétique syllabe par syllabe
@@ -104,7 +104,8 @@ Sois très détaillé dans l'explication phonétique.
   }) async {
     try {
       final languageName = targetLanguage.name;
-      final prompt = '''
+      final prompt =
+          '''
 Explique la règle de grammaire "$topic" en $languageName pour un apprenant $sourceLanguage:
 
 1. La règle clairement expliquée

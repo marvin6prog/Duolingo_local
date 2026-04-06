@@ -19,7 +19,10 @@ class ProfileScreen extends StatelessWidget {
         elevation: 0,
         title: const Text(
           'Profil',
-          style: TextStyle(color: Color(0xFF3C3C3C), fontWeight: FontWeight.bold),
+          style: TextStyle(
+            color: Color(0xFF3C3C3C),
+            fontWeight: FontWeight.bold,
+          ),
         ),
         actions: [
           IconButton(
@@ -64,7 +67,11 @@ class ProfileScreen extends StatelessWidget {
             backgroundColor: const Color(0xFF58CC02),
             child: Text(
               profile?['displayName']?.substring(0, 1).toUpperCase() ?? 'U',
-              style: const TextStyle(fontSize: 32, color: Colors.white, fontWeight: FontWeight.bold),
+              style: const TextStyle(
+                fontSize: 32,
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ),
           const SizedBox(width: 20),
@@ -74,10 +81,16 @@ class ProfileScreen extends StatelessWidget {
               children: [
                 Text(
                   profile?['displayName'] ?? 'Utilisateur',
-                  style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                  style: const TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 const SizedBox(height: 4),
-                const Text('Apprenant passionné', style: TextStyle(color: Colors.grey)),
+                const Text(
+                  'Apprenant passionné',
+                  style: TextStyle(color: Colors.grey),
+                ),
               ],
             ),
           ),
@@ -86,7 +99,11 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildLanguageSettings(BuildContext context, UserProvider provider, UserProgress? progress) {
+  Widget _buildLanguageSettings(
+    BuildContext context,
+    UserProvider provider,
+    UserProgress? progress,
+  ) {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
@@ -119,7 +136,12 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildLanguagePicker(BuildContext context, String label, Language current, Function(Language?) onChanged) {
+  Widget _buildLanguagePicker(
+    BuildContext context,
+    String label,
+    Language current,
+    Function(Language?) onChanged,
+  ) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -142,14 +164,29 @@ class ProfileScreen extends StatelessWidget {
   Widget _buildStatsSection(UserProgress? progress) {
     return Row(
       children: [
-        _buildStatCard('XP Total', '${progress?.totalXP ?? 0}', Icons.bolt, Colors.orange),
+        _buildStatCard(
+          'XP Total',
+          '${progress?.totalXP ?? 0}',
+          Icons.bolt,
+          Colors.orange,
+        ),
         const SizedBox(width: 16),
-        _buildStatCard('Série', '${progress?.streak ?? 0}', Icons.local_fire_department, Colors.red),
+        _buildStatCard(
+          'Série',
+          '${progress?.streak ?? 0}',
+          Icons.local_fire_department,
+          Colors.red,
+        ),
       ],
     );
   }
 
-  Widget _buildStatCard(String label, String value, IconData icon, Color color) {
+  Widget _buildStatCard(
+    String label,
+    String value,
+    IconData icon,
+    Color color,
+  ) {
     return Expanded(
       child: Container(
         padding: const EdgeInsets.all(16),
@@ -161,8 +198,14 @@ class ProfileScreen extends StatelessWidget {
           children: [
             Icon(icon, color: color, size: 30),
             const SizedBox(height: 8),
-            Text(value, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-            Text(label, style: const TextStyle(color: Colors.grey, fontSize: 12)),
+            Text(
+              value,
+              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+            Text(
+              label,
+              style: const TextStyle(color: Colors.grey, fontSize: 12),
+            ),
           ],
         ),
       ),
@@ -171,10 +214,14 @@ class ProfileScreen extends StatelessWidget {
 
   String _getLanguageName(Language lang) {
     switch (lang) {
-      case Language.bulu: return 'Bulu';
-      case Language.bassaa: return 'Bassaa';
-      case Language.bamileke: return 'Bamiléké';
-      case Language.ewondo: return 'Ewondo';
+      case Language.bulu:
+        return 'Bulu';
+      case Language.bassaa:
+        return 'Bassaa';
+      case Language.bamileke:
+        return 'Bamiléké';
+      case Language.ewondo:
+        return 'Ewondo';
     }
   }
 }

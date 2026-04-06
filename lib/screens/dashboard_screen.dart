@@ -21,10 +21,7 @@ class DashboardScreen extends StatelessWidget {
         elevation: 0,
         title: const Text(
           'Langues du Cameroun',
-          style: TextStyle(
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-          ),
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
         actions: const [
           HeartsWidget(),
@@ -72,7 +69,8 @@ class DashboardScreen extends StatelessWidget {
                       MaterialPageRoute(
                         builder: (context) => LessonScreen(
                           subject: subject,
-                          targetLanguage: userProvider.userProgress!.targetLanguage,
+                          targetLanguage:
+                              userProvider.userProgress!.targetLanguage,
                         ),
                       ),
                     );
@@ -106,7 +104,10 @@ class DashboardScreen extends StatelessWidget {
             radius: 30,
             backgroundColor: const Color(0xFF58CC02),
             child: Text(
-              userProvider.userProfile?['displayName']?.substring(0, 2).toUpperCase() ?? 'U',
+              userProvider.userProfile?['displayName']
+                      ?.substring(0, 2)
+                      .toUpperCase() ??
+                  'U',
               style: const TextStyle(
                 color: Colors.white,
                 fontSize: 20,
@@ -130,10 +131,7 @@ class DashboardScreen extends StatelessWidget {
                 const SizedBox(height: 4),
                 Text(
                   'Prêt à apprendre aujourd\'hui ?',
-                  style: TextStyle(
-                    fontSize: 14,
-                    color: Colors.grey[600],
-                  ),
+                  style: TextStyle(fontSize: 14, color: Colors.grey[600]),
                 ),
               ],
             ),
@@ -145,7 +143,7 @@ class DashboardScreen extends StatelessWidget {
 
   Widget _buildStreakSection(UserProvider userProvider) {
     final streak = userProvider.userProgress?.streak ?? 0;
-    
+
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
@@ -166,7 +164,9 @@ class DashboardScreen extends StatelessWidget {
       child: Row(
         children: [
           Icon(
-            streak > 0 ? Icons.local_fire_department : Icons.local_fire_department_outlined,
+            streak > 0
+                ? Icons.local_fire_department
+                : Icons.local_fire_department_outlined,
             color: Colors.white,
             size: 40,
           ),
@@ -185,10 +185,7 @@ class DashboardScreen extends StatelessWidget {
                 ),
                 Text(
                   '$streak ${streak <= 1 ? 'jour' : 'jours'} consécutifs',
-                  style: const TextStyle(
-                    color: Colors.white70,
-                    fontSize: 14,
-                  ),
+                  style: const TextStyle(color: Colors.white70, fontSize: 14),
                 ),
               ],
             ),
@@ -199,9 +196,11 @@ class DashboardScreen extends StatelessWidget {
   }
 
   Widget _buildLanguageInfo(UserProvider userProvider) {
-    final targetLang = userProvider.userProgress?.targetLanguage ?? Language.bulu;
-    final sourceLang = userProvider.userProgress?.sourceLanguage ?? Language.bulu;
-    
+    final targetLang =
+        userProvider.userProgress?.targetLanguage ?? Language.bulu;
+    final sourceLang =
+        userProvider.userProgress?.sourceLanguage ?? Language.bulu;
+
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
@@ -263,10 +262,7 @@ class DashboardScreen extends StatelessWidget {
         SizedBox(height: 8),
         Text(
           'Commencez par les bases et progressez étape par étape',
-          style: TextStyle(
-            fontSize: 14,
-            color: Colors.grey,
-          ),
+          style: TextStyle(fontSize: 14, color: Colors.grey),
         ),
       ],
     );

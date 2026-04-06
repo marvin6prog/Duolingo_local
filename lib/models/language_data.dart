@@ -62,7 +62,17 @@ class LanguageItem {
 
 enum Language { bulu, bassaa, bamileke, ewondo }
 
-enum Subject { alphabet, expression, number, conjugation, pronoun, article, phrase, famille, animaux }
+enum Subject {
+  alphabet,
+  expression,
+  number,
+  conjugation,
+  pronoun,
+  article,
+  phrase,
+  famille,
+  animaux,
+}
 
 class UserProgress {
   final String userId;
@@ -93,8 +103,8 @@ class UserProgress {
       completedLevels: _parseSubjects(json['completedLevels']),
       totalXP: json['totalXP'] ?? 0,
       hearts: json['hearts'] ?? 5,
-      lastLessonDate: json['lastLessonDate'] != null 
-          ? DateTime.parse(json['lastLessonDate']) 
+      lastLessonDate: json['lastLessonDate'] != null
+          ? DateTime.parse(json['lastLessonDate'])
           : null,
       streak: json['streak'] ?? 0,
     );
@@ -105,7 +115,9 @@ class UserProgress {
       'userId': userId,
       'sourceLanguage': sourceLanguage.name,
       'targetLanguage': targetLanguage.name,
-      'completedLevels': completedLevels.map((key, value) => MapEntry(key.name, value)),
+      'completedLevels': completedLevels.map(
+        (key, value) => MapEntry(key.name, value),
+      ),
       'totalXP': totalXP,
       'hearts': hearts,
       'lastLessonDate': lastLessonDate?.toIso8601String(),
@@ -115,11 +127,16 @@ class UserProgress {
 
   static Language _parseLanguage(String? lang) {
     switch (lang) {
-      case 'bulu': return Language.bulu;
-      case 'bassaa': return Language.bassaa;
-      case 'bamileke': return Language.bamileke;
-      case 'ewondo': return Language.ewondo;
-      default: return Language.bulu;
+      case 'bulu':
+        return Language.bulu;
+      case 'bassaa':
+        return Language.bassaa;
+      case 'bamileke':
+        return Language.bamileke;
+      case 'ewondo':
+        return Language.ewondo;
+      default:
+        return Language.bulu;
     }
   }
 
@@ -134,16 +151,26 @@ class UserProgress {
 
   static Subject _parseSubject(String subject) {
     switch (subject) {
-      case 'alphabet': return Subject.alphabet;
-      case 'expression': return Subject.expression;
-      case 'number': return Subject.number;
-      case 'conjugation': return Subject.conjugation;
-      case 'pronoun': return Subject.pronoun;
-      case 'article': return Subject.article;
-      case 'phrase': return Subject.phrase;
-      case 'famille': return Subject.famille;
-      case 'animaux': return Subject.animaux;
-      default: return Subject.alphabet;
+      case 'alphabet':
+        return Subject.alphabet;
+      case 'expression':
+        return Subject.expression;
+      case 'number':
+        return Subject.number;
+      case 'conjugation':
+        return Subject.conjugation;
+      case 'pronoun':
+        return Subject.pronoun;
+      case 'article':
+        return Subject.article;
+      case 'phrase':
+        return Subject.phrase;
+      case 'famille':
+        return Subject.famille;
+      case 'animaux':
+        return Subject.animaux;
+      default:
+        return Subject.alphabet;
     }
   }
 }

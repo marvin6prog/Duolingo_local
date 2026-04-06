@@ -7,7 +7,7 @@ class LanguageService {
 
   static Future<List<LanguageItem>> loadLanguageData(Language language) async {
     final cacheKey = language.name;
-    
+
     if (_cache.containsKey(cacheKey)) {
       return _cache[cacheKey]!;
     }
@@ -31,7 +31,7 @@ class LanguageService {
 
       final String jsonString = await rootBundle.loadString(fileName);
       final List<dynamic> jsonList = json.decode(jsonString);
-      
+
       final items = jsonList
           .map((json) => LanguageItem.fromJson(json))
           .where((item) => item.bu.isNotEmpty || item.ew.isNotEmpty)
@@ -50,11 +50,9 @@ class LanguageService {
     Subject subject,
   ) async {
     final allItems = await loadLanguageData(language);
-    
+
     final subjectString = subject.name;
-    return allItems
-        .where((item) => item.subject == subjectString)
-        .toList();
+    return allItems.where((item) => item.subject == subjectString).toList();
   }
 
   static Future<List<LanguageItem>> getItemsBySubjects(
@@ -62,16 +60,19 @@ class LanguageService {
     List<Subject> subjects,
   ) async {
     final allItems = await loadLanguageData(language);
-    
+
     final subjectStrings = subjects.map((s) => s.name).toSet();
     return allItems
         .where((item) => subjectStrings.contains(item.subject))
         .toList();
   }
 
-  static List<LanguageItem> getRandomItems(List<LanguageItem> items, int count) {
+  static List<LanguageItem> getRandomItems(
+    List<LanguageItem> items,
+    int count,
+  ) {
     if (items.length <= count) return items;
-    
+
     final shuffled = List<LanguageItem>.from(items)..shuffle();
     return shuffled.take(count).toList();
   }
@@ -92,19 +93,27 @@ class LanguageService {
     for (int i = 0; i < randomItems.length && i < questionCount; i++) {
       final item = randomItems[i];
       final questionType = _getRandomQuestionType();
-      
+
       switch (questionType) {
         case QuestionType.recognition:
-          questions.add(_createRecognitionQuestion(item, sourceLang, targetLang, i));
+          questions.add(
+            _createRecognitionQuestion(item, sourceLang, targetLang, i),
+          );
           break;
         case QuestionType.reverseTranslation:
-          questions.add(_createReverseTranslationQuestion(item, sourceLang, targetLang, i));
+          questions.add(
+            _createReverseTranslationQuestion(item, sourceLang, targetLang, i),
+          );
           break;
         case QuestionType.phonetic:
-          questions.add(_createPhoneticQuestion(item, sourceLang, targetLang, i));
+          questions.add(
+            _createPhoneticQuestion(item, sourceLang, targetLang, i),
+          );
           break;
         case QuestionType.matching:
-          questions.add(_createMatchingQuestion(item, sourceLang, targetLang, i));
+          questions.add(
+            _createMatchingQuestion(item, sourceLang, targetLang, i),
+          );
           break;
       }
     }
@@ -126,21 +135,21 @@ class LanguageService {
   ) {
     final sourceText = sourceLang == 'fr' ? item.fr : item.en;
     final correctAnswer = item.getTranslation(sourceLang, targetLang);
-    
+
     final options = [correctAnswer];
     final otherItems = getRandomItems([item], 3);
-    
+
     for (final otherItem in otherItems) {
       final answer = otherItem.getTranslation(sourceLang, targetLang);
       if (answer.isNotEmpty && !options.contains(answer)) {
         options.add(answer);
       }
     }
-    
+
     while (options.length < 4) {
       options.add('Option ${options.length}');
     }
-    
+
     options.shuffle();
 
     return Question(
@@ -162,21 +171,21 @@ class LanguageService {
   ) {
     final sourceText = item.getTranslation(targetLang, sourceLang);
     final correctAnswer = sourceLang == 'fr' ? item.fr : item.en;
-    
+
     final options = [correctAnswer];
     final otherItems = getRandomItems([item], 3);
-    
+
     for (final otherItem in otherItems) {
       final answer = sourceLang == 'fr' ? otherItem.fr : otherItem.en;
       if (answer.isNotEmpty && !options.contains(answer)) {
         options.add(answer);
       }
     }
-    
+
     while (options.length < 4) {
       options.add('Option ${options.length}');
     }
-    
+
     options.shuffle();
 
     return Question(
@@ -196,21 +205,21 @@ class LanguageService {
     int index,
   ) {
     final correctAnswer = item.getTranslation(sourceLang, targetLang);
-    
+
     final options = [correctAnswer];
     final otherItems = getRandomItems([item], 3);
-    
+
     for (final otherItem in otherItems) {
       final answer = otherItem.getTranslation(sourceLang, targetLang);
       if (answer.isNotEmpty && !options.contains(answer)) {
         options.add(answer);
       }
     }
-    
+
     while (options.length < 4) {
       options.add('Option ${options.length}');
     }
-    
+
     options.shuffle();
 
     return Question(
@@ -231,7 +240,7 @@ class LanguageService {
   ) {
     final sourceText = sourceLang == 'fr' ? item.fr : item.en;
     final targetText = item.getTranslation(sourceLang, targetLang);
-    
+
     return Question(
       id: 'mat_${item.id}_$index',
       subject: _parseSubject(item.subject),
@@ -245,16 +254,26 @@ class LanguageService {
 
   static Subject _parseSubject(String subject) {
     switch (subject) {
-      case 'alphabet': return Subject.alphabet;
-      case 'expression': return Subject.expression;
-      case 'number': return Subject.number;
-      case 'conjugation': return Subject.conjugation;
-      case 'pronoun': return Subject.pronoun;
-      case 'article': return Subject.article;
-      case 'phrase': return Subject.phrase;
-      case 'famille': return Subject.famille;
-      case 'animaux': return Subject.animaux;
-      default: return Subject.alphabet;
+      case 'alphabet':
+        return Subject.alphabet;
+      case 'expression':
+        return Subject.expression;
+      case 'number':
+        return Subject.number;
+      case 'conjugation':
+        return Subject.conjugation;
+      case 'pronoun':
+        return Subject.pronoun;
+      case 'article':
+        return Subject.article;
+      case 'phrase':
+        return Subject.phrase;
+      case 'famille':
+        return Subject.famille;
+      case 'animaux':
+        return Subject.animaux;
+      default:
+        return Subject.alphabet;
     }
   }
 }

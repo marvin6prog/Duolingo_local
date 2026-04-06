@@ -33,7 +33,9 @@ class _LessonScreenState extends State<LessonScreen> {
   @override
   void initState() {
     super.initState();
-    _confettiController = ConfettiController(duration: const Duration(seconds: 3));
+    _confettiController = ConfettiController(
+      duration: const Duration(seconds: 3),
+    );
     _loadQuestions();
   }
 
@@ -45,13 +47,16 @@ class _LessonScreenState extends State<LessonScreen> {
 
   Future<void> _loadQuestions() async {
     setState(() => _isLoading = true);
-    
+
     try {
       final userProvider = Provider.of<UserProvider>(context, listen: false);
-      final sourceLang = userProvider.userProgress?.sourceLanguage ?? Language.ewondo;
+      final sourceLang =
+          userProvider.userProgress?.sourceLanguage ?? Language.ewondo;
       final sourceLangCode = sourceLang == Language.ewondo ? 'fr' : 'en';
-      final targetLangCode = widget.targetLanguage == Language.ewondo ? 'ewondo' : 'bu';
-      
+      final targetLangCode = widget.targetLanguage == Language.ewondo
+          ? 'ewondo'
+          : 'bu';
+
       final questions = await LanguageService.generateQuestions(
         language: widget.targetLanguage,
         subject: widget.subject,
@@ -59,7 +64,7 @@ class _LessonScreenState extends State<LessonScreen> {
         targetLang: targetLangCode,
         questionCount: 10,
       );
-      
+
       if (mounted) {
         setState(() {
           _questions = questions;
@@ -84,20 +89,20 @@ class _LessonScreenState extends State<LessonScreen> {
   void _onAnswerSelected(String selectedAnswer) {
     final correctAnswer = _questions[_currentQuestionIndex].correctAnswer;
     final isCorrect = selectedAnswer == correctAnswer;
-    
+
     if (isCorrect) {
       setState(() => _correctAnswers++);
       _showFeedback(true);
     } else {
       setState(() => _hearts--);
       _showFeedback(false);
-      
+
       if (_hearts <= 0) {
         _endLesson(false);
         return;
       }
     }
-    
+
     Future.delayed(const Duration(milliseconds: 1500), () {
       if (mounted) {
         if (_currentQuestionIndex < _questions.length - 1) {
@@ -113,7 +118,7 @@ class _LessonScreenState extends State<LessonScreen> {
     final color = isCorrect ? Colors.green : Colors.red;
     final icon = isCorrect ? Icons.check_circle : Icons.cancel;
     final message = isCorrect ? 'Correct !' : 'Incorrect !';
-    
+
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Row(
@@ -131,18 +136,18 @@ class _LessonScreenState extends State<LessonScreen> {
 
   Future<void> _endLesson(bool completed) async {
     final userProvider = Provider.of<UserProvider>(context, listen: false);
-    
+
     if (completed) {
       final xp = _correctAnswers * 10;
       await userProvider.addXP(xp);
       await userProvider.completeSubjectLevel(widget.subject, 1);
       await userProvider.updateStreak();
-      
+
       setState(() => _lessonCompleted = true);
       _confettiController.play();
     } else {
       await userProvider.updateHearts(_hearts);
-      
+
       if (mounted) {
         showDialog(
           context: context,
@@ -221,10 +226,7 @@ class _LessonScreenState extends State<LessonScreen> {
                   const SizedBox(height: 10),
                   Text(
                     '$_correctAnswers/${_questions.length} réponses correctes',
-                    style: const TextStyle(
-                      fontSize: 18,
-                      color: Colors.white70,
-                    ),
+                    style: const TextStyle(fontSize: 18, color: Colors.white70),
                   ).animate().fadeIn(duration: 1000.ms),
                   const SizedBox(height: 20),
                   Text(
@@ -243,7 +245,10 @@ class _LessonScreenState extends State<LessonScreen> {
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.white,
                       foregroundColor: const Color(0xFF58CC02),
-                      padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 32,
+                        vertical: 16,
+                      ),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(25),
                       ),
@@ -291,11 +296,7 @@ class _LessonScreenState extends State<LessonScreen> {
               ...List.generate(_hearts, (index) {
                 return const Padding(
                   padding: EdgeInsets.only(right: 2),
-                  child: Icon(
-                    Icons.favorite,
-                    color: Colors.red,
-                    size: 20,
-                  ),
+                  child: Icon(Icons.favorite, color: Colors.red, size: 20),
                 );
               }),
               const SizedBox(width: 16),
@@ -313,9 +314,7 @@ class _LessonScreenState extends State<LessonScreen> {
               alignment: Alignment.centerLeft,
               widthFactor: (_currentQuestionIndex + 1) / _questions.length,
               child: Container(
-                decoration: const BoxDecoration(
-                  color: Color(0xFF58CC02),
-                ),
+                decoration: const BoxDecoration(color: Color(0xFF58CC02)),
               ),
             ),
           ),
