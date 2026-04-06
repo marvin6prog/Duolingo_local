@@ -66,8 +66,8 @@ enum Subject { alphabet, expression, number, conjugation, pronoun, article, phra
 
 class UserProgress {
   final String userId;
-  final Language sourceLanguage;
-  final Language targetLanguage;
+  Language sourceLanguage;
+  Language targetLanguage;
   final Map<Subject, int> completedLevels;
   int totalXP;
   int hearts;
